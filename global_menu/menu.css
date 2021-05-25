@@ -1,0 +1,124 @@
+@import url("https://use.typekit.net/wib3msp.css");
+
+:root {
+  --color-1: #faf5f1;
+  --color-2: #f5e6d0;
+  --color-3: #c58b71;
+  --color-4: #3f4c5a;
+  --color-5: #657a3c;
+  --color-6: #c4d2a0;
+
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  font-style: normal;
+
+  --main-text-color: #3f4c5a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font: var(--font-1);
+  color: var(--main-text-color);
+}
+
+body {
+  background-color: var(--color-1);
+}
+
+#globalMenu {
+  display: flex;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 140px;
+  height: 140px;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.menuNav {
+  margin-left: 16rem;
+  margin-top: 1.5rem;
+}
+
+.menuNav nav ul {
+  display: flex;
+  gap: 5rem;
+}
+
+.menuNav li {
+  list-style: none;
+}
+
+.menuNav a {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.menuNav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-3);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.menuNav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.missionMenu {
+  display: flex;
+}
+
+.leafIcon {
+  height: 18px;
+  width: 18px;
+}
+
+.leafIcon img {
+  max-width: 100%;
+}
+
+.searchCart {
+  display: flex;
+  gap: 1rem;
+  margin-left: 20rem;
+  margin-top: 1.5rem;
+}
+
+.shopMenu {
+  width: 100vw;
+  margin-top: -4rem;
+  background-color: var(--color-2);
+  padding-left: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.jewelleryMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.jewelleryMenu a {
+  text-decoration: none;
+}
+
+.jewelleryMenu h1 {
+  color: var(--color-3);
+  font-weight: 800;
+  font-style: italic;
+}
