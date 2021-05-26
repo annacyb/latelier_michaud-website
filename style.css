@@ -16,3 +16,8 @@
   --font-2: "Work Sans", sans-serif;
   --main-text-color: #3f4c5a;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
