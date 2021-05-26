@@ -26,10 +26,30 @@ body {
   background-color: var(--color-1);
 }
 
-#globalMenu {
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 65px;
+  line-height: 65px;
+}
+
+nav .wrapper {
+  position: relative;
+  max-width: 1250px;
+  padding: 0 30px;
+  margin: auto;
   display: flex;
-  margin-left: 3rem;
-  margin-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .logo a {
+  text-decoration: none;
+}
+
+.wrapper .nav-links {
+  display: inline-flex;
 }
 
 .logo {
@@ -41,6 +61,43 @@ body {
   max-width: 100%;
 }
 
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #c58b71;
+}
+
+.missionMenu {
+  display: flex;
+}
+
+.leafIcon {
+  height: 0;
+  width: 18px;
+}
+
+.leafIcon img {
+  max-width: 100%;
+}
+
+.megaBox {
+  position: absolute;
+  top: 0;
+  background-color: var(--color-2);
+  width: 100%;
+  left: 0;
+}
+
+/*
 .menuNav {
   margin-left: 16rem;
   margin-top: 1.5rem;
@@ -122,3 +179,4 @@ body {
   font-weight: 800;
   font-style: italic;
 }
+*/
