@@ -74,15 +74,34 @@ nav .wrapper {
   text-decoration: none;
   padding-left: 25px;
   padding-right: 25px;
-  transition: all 0.3s ease;
 }
 
-.nav-links li a:hover {
-  text-decoration: underline;
+.mainMenuA {
+  display: inline-block;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.mainMenuA:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 1;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-font);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  margin-top: -1.5rem;
+}
+.mainMenuA:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .nav-links li:hover .megaBox {
-  top: 90px;
+  top: 95px;
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
@@ -103,7 +122,7 @@ nav .wrapper {
 
 .megaBox {
   position: absolute;
-  top: 95px;
+  top: 100px;
   background-color: var(--color-background2);
   width: 100%;
   left: 0;
@@ -145,7 +164,7 @@ nav .wrapper {
 
 .mega-links li a:hover {
   color: #92583f;
-  font-weight: 600;
+  text-decoration: none;
 }
 
 .rowV2 .row a h1:hover {
