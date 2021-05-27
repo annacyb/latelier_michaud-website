@@ -111,6 +111,7 @@ h3 {
 .secTwo {
   background-color: var(--color-background2);
   text-align: center;
+  padding: 2rem;
 }
 
 .secTwo h2 {
@@ -120,4 +121,39 @@ h3 {
 .secTwo p {
   font-family: var(--font-2);
   font-weight: 300;
+}
+
+/*SECTION THREE*/
+.secThree {
+  display: flex;
+  flex-direction: column;
+}
+
+.beginning {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  margin: 0 10rem;
+}
+
+img:nth-child(1) {
+  max-width: 40%;
+}
+
+img:nth-child(2) {
+  max-width: 30%;
+}
+
+.beg {
+  margin: 0 18rem;
+  font-family: var(--font-2);
+  font-weight: 300;
+}
+
+/*SECTION FOUR*/
+.secFour {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background2);
 }
