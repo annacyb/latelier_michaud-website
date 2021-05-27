@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="productView.css" />
+    <title>Product View</title>
+  </head>
+  <body>
+    <main>
+      <section class="productDetails">
+        <div class="productPic">
+          <img class="product" src="earrings.jpg" />
+        </div>
+        <div class="productInfo">
+          <div class="priceName">
+            <h2>Golden Earrings</h2>
+            <p>1000 DKK</p>
+          </div>
+          <div class="materialSize">
+            <div class="materialType">
+              <h2>Material</h2>
+              <div class="material">
+                <h3>Silver</h3>
+                <div class="line">|</div>
+                <h3>Gold</h3>
+              </div>
+            </div>
+            <div class="size">
+              <h3>Size</h3>
+              <label>
+                <select name="size">
+                  <option>S (50-52)</option>
+                  <option>M (52-54)</option>
+                  <option>L (54-56)</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="stone">
+            <h3>Stone colour</h3>
+            <div class="stones">
+              <div class="stone green"></div>
+              <div class="stone blue"></div>
+              <div class="stone black"></div>
+              <div class="stone beige"></div>
+            </div>
+          </div>
+          <div class="qty">
+            <label>
+              <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </label>
+            <button class="addCart hide">Add to cart</button>
+          </div>
+          <div class="valueList"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
