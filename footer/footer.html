@@ -8,38 +8,100 @@
     <title>Footer</title>
   </head>
   <body>
+    <div class="mockupDiv"></div>
+
     <footer>
       <div class="newsletterFooter">
-        <div class="betheFirst">
-          <span>Be the first</span> to hear about new collections & styles,
-          <br />offers and events
-        </div>
+        <div class="textNewsletter">
+          <div class="betheFirst">
+            <span>Be the first</span> to hear about new collections & styles,
+            <br />offers and events
+          </div>
 
-        <div class="keepinTouch">
-          <div class="lets">Let's</div>
-          <div class="keep">KEEP IN TOUCH</div>
-          <div class="newsletterFormdiv">
-            <form action=""></form>
+          <div class="keepinTouch">
+            <div class="lets">Let's</div>
+            <div class="keep">KEEP IN TOUCH</div>
+            <div class="formContainer">
+              <form class="newsletterForm" name="LMNewsletter">
+                <input
+                  class="emailField"
+                  type="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+                <div class="formLine"></div>
+                <input class="joinNow" type="submit" value="JOIN NOW" />
+              </form>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="linksFooter">
-        <div class="footerLeft">
-          <div class="socialMedia">
-            <div><span>Find us</span> on social media</div>
-            <div class="someIcons">
-              <a href=""
-                ><img src="../images/insta-icon.png" alt="instagram"
-              /></a>
-              <a href=""
-                ><img src="../images/facebook-icon.png" alt="facebook"
-              /></a>
+        <div class="footerTop">
+          <div class="footerLeft">
+            <div class="socialMedia">
+              <div class="findUs"><span>Find us</span> on social media</div>
+              <div class="someIcons">
+                <a href=""
+                  ><img
+                    class="someIcon"
+                    src="../images/insta-icon.png"
+                    alt="instagram"
+                /></a>
+                <a href=""
+                  ><img
+                    class="someIcon"
+                    src="../images/facebook-icon.png"
+                    alt="facebook"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footerRight">
+            <div class="footerIcons">
+              <a class="iconAlink" href="#">
+                <div class="singleIcon">
+                  <div class="iconImg">
+                    <img src="../images/map-icon.png" alt="map" />
+                  </div>
+                  <div>Find a store</div>
+                </div>
+              </a>
+
+              <a class="iconAlink" href="">
+                <div class="singleIcon">
+                  <div class="iconImg">
+                    <img src="../images/gift-card-icon.png" alt="giftcard" />
+                  </div>
+                  <div>Gift card</div>
+                </div>
+              </a>
+
+              <a class="iconAlink" href="#">
+                <div class="singleIcon">
+                  <div class="iconImg">
+                    <img src="../images/credit-card-icon.png" alt="card" />
+                  </div>
+                  <div>Payment methods</div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="footerRight"></div>
+        <div class="footerBottom">
+          <div class="termsLinks">
+            <a href="#"><div>Terms & conditions</div></a>
+            <div class="dotLinks"></div>
+            <a href="#"><div>Privacy policy</div></a>
+            <div class="dotLinks"></div>
+            <a href="#"><div>Delivery and returns</div></a>
+            <div class="dotLinks"></div>
+            <a href=""><div>FAQ</div></a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

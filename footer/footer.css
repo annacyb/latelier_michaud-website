@@ -24,4 +24,294 @@
 
 body {
   background-color: var(--color-background);
+  color: var(--main-text-color);
+}
+
+.mockupDiv {
+  height: 100px;
+}
+
+.newsletterFooter {
+  background-image: url(../photos/footer-picture3.jpg);
+  background-repeat: no-repeat;
+  width: auto;
+  height: 500px;
+}
+
+.textNewsletter {
+  margin-left: 5rem;
+  padding-top: 3rem;
+  color: white;
+}
+
+.betheFirst {
+  font-size: 20px;
+}
+
+.betheFirst span {
+  color: var(--color-shape3);
+}
+
+.keepinTouch {
+  margin-top: 5rem;
+}
+
+.lets {
+  color: var(--color-font);
+  font-size: 50px;
+  font-style: italic;
+}
+
+.keep {
+  font-size: 70px;
+  margin-top: -1.5rem;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  color: white;
+}
+
+.emailField {
+  height: 2rem;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+}
+
+.formLine {
+  height: 1px;
+  background-color: white;
+  margin-top: 2px;
+  margin-bottom: 2.5rem;
+}
+
+.joinNow {
+  height: 50px;
+  width: 200px;
+  background-color: transparent;
+  border: solid white 2px;
+  font-size: 20px;
+  font-family: ivypresto-display, serif;
+  font-weight: 600;
+  font-style: italic;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.joinNow:hover {
+  background-color: white;
+  opacity: 90%;
+  color: var(--color-button);
+}
+
+.linksFooter {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  padding-right: 8rem;
+  padding-left: 8rem;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.findUs {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.findUs span {
+  color: var(--color-font);
+}
+
+.someIcon {
+  height: 25px;
+  width: 25px;
+  margin-right: 1rem;
+}
+
+.termsLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.termsLinks a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.termsLinks a:hover {
+  text-decoration: underline;
+}
+
+.dotLinks {
+  height: 7px;
+  width: 7px;
+  background-color: var(--color-font);
+  border-radius: 20px;
+  margin-top: 9px;
+}
+
+.footerRight {
+  margin-top: 1rem;
+  margin-right: 8rem;
+}
+
+.footerIcons {
+  font-size: 1.3rem;
+}
+
+.footerIcons a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.singleIcon {
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+
+.iconImg img {
+  max-width: 80%;
+}
+
+@media only screen and (max-width: 1180px) {
+  .linksFooter {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  .footerRight {
+    margin-right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .linksFooter {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .newsletterFooter {
+    background-image: url(../photos/footer-picture-small.jpg);
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .termsLinks {
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+
+  .dotLinks {
+    height: 5px;
+    width: 5px;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .textNewsletter {
+    margin-left: 2rem;
+  }
+
+  .betheFirst {
+    font-size: 18px;
+  }
+
+  .lets {
+    font-size: 45px;
+  }
+
+  .keep {
+    font-size: 65px;
+  }
+
+  .newsletterForm {
+    width: 300px;
+  }
+
+  .emailField {
+    font-size: 20px;
+  }
+
+  .joinNow {
+    height: 45px;
+    width: 180px;
+    font-size: 18px;
+  }
+
+  .footerTop {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .betheFirst {
+    font-size: 18px;
+  }
+
+  .lets {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .keep {
+    font-size: 45px;
+  }
+
+  .newsletterForm {
+    width: 250px;
+  }
+
+  .emailField {
+    font-size: 20px;
+  }
+
+  .joinNow {
+    height: 40px;
+    width: 170px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .termsLinks {
+    font-size: 0.6rem;
+    gap: 7px;
+  }
+
+  .dotLinks {
+    height: 3px;
+    width: 3px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .newsletterFooter {
+    background-image: url(../photos/footer-picture-xsmall.jpg);
+  }
+
+  .findUs {
+    font-size: 1rem;
+  }
+
+  .singleIcon {
+    font-size: 1rem;
+  }
+
+  .iconImg img {
+    max-width: 60%;
+  }
 }
