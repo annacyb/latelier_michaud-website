@@ -30,7 +30,8 @@ body {
 .material,
 .materialSize,
 .stones,
-.qty {
+.qty,
+.value {
   display: flex;
   flex-direction: row;
 }
@@ -58,7 +59,8 @@ div {
 .priceName,
 .materialType,
 .size,
-.stone {
+.stone,
+.values {
   display: flex;
   flex-direction: column;
 }
