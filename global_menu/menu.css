@@ -140,11 +140,12 @@ nav .wrapper {
 }
 
 .row {
-  line-height: 45px;
+  line-height: 32px;
 }
 
 .rowV2 {
   text-align: center;
+  margin-top: 4rem;
 }
 
 .rowV2 .row a {
