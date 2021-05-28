@@ -28,6 +28,8 @@ body {
   background-color: var(--color-background);
 }
 
+/*DESKTOP MENU*/
+
 nav {
   position: fixed;
   width: 100%;
@@ -193,4 +195,33 @@ nav .wrapper {
   display: flex;
   gap: 1rem;
   margin-top: 1.5rem;
+}
+
+/*MOBILE MENU*/
+#mobileMenu {
+  height: 100px;
+  background-color: var(--color-shape3);
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 920px) {
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin-left: 0.5rem;
+  }
+
+  .logo img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  #desktopMenu {
+    visibility: hidden;
+  }
+
+  #mobileMenu {
+    visibility: visible;
+  }
 }
