@@ -1,23 +1,9 @@
-// Hero section- slider
+// Section 1- Hero section (slider)
 
 
 function click_slider_dots(dot){
     let dot_id = dot.id
-    // console.log("tutaj")
-    // console.log(dot_id)
 
-//check if ID dota jest 1/2/3
-//
-//2
-// znajdz id "slider2-text"
-// remove z classlist class "hidden"
-
-// znajdz id "slider2-image"
-// remove z classlist class "hidden"
-
-// znajdz id "slider-dot2"
-// remove z classlist class "dot"
-// add do classlist class "dot-filled"
 
     if (dot_id.includes("1")) {
         console.log("DOT 1 CLICKED")
@@ -160,18 +146,6 @@ function click_slider_dots(dot){
 
     
     }
-
-
-
-
-    // toggle_click(sales_button)
-    // if (current_filters.sales) {
-    //     current_filters.sales = false
-    // } else {
-    //     current_filters.sales = true
-    // }
-
-    // load_data_sales_or_newarr()
 }
 
 
@@ -187,13 +161,5 @@ function setup_listeners_slider_dots() {
     dot3.addEventListener("click", click_slider_dots.bind(null, dot3))
 }
 
-
-function main(){
-    // const dot1 = document.getElementById("slider-dot1")
-    // const dot2 = document.getElementById("slider-dot2")
-    // const dot3 = document.getElementById("slider-dot3")
-
-    // setup_listeners_slider_dots()
-}
 
 setup_listeners_slider_dots()
