@@ -73,7 +73,7 @@ div {
   margin-left: 2rem;
 }
 
-.productPic {
+/* .productPic {
   margin-right: 0;
   padding-right: 0;
 }
@@ -81,8 +81,11 @@ div {
 .product {
   margin: 0;
   padding: 0;
-}
-
+} */
+/* 
+.product {
+  width: 30rem;
+} */
 .priceName h2,
 .materialType h2,
 .size h3,
@@ -104,6 +107,7 @@ div {
   font-family: var(--font-2);
   color: var(--main-text-color);
   font-weight: 200;
+  font-size: 1.2rem;
 }
 
 .material h3:nth-child(1) {
@@ -134,10 +138,6 @@ div {
   padding: 0;
 }
 
-.product {
-  width: 30rem;
-}
-
 .valueList {
   margin-top: 2rem;
 }
@@ -156,6 +156,8 @@ select {
   background-position-x: 100%;
   background-position-y: 5px;
   margin-right: 2rem;
+  color: var(--main-text-color);
+  font-weight: 200;
 }
 
 .icon {
@@ -268,4 +270,79 @@ li {
 
 .image-stack img {
   max-width: 80%;
+}
+
+/*SLIDER*/
+
+.first {
+  border: solid 3px yellow;
+}
+.second {
+  border: solid 3px hotpink;
+}
+.third {
+  border: solid 3px red;
+}
+.fourth {
+  border: solid 3px blue;
+}
+/* 
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  display: flex;
+  flex-direction: row;
+} */
+
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.mySlides {
+  display: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.mySlides img {
+  width: 30rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 90px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.slideshow {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .slideshow-inner {
+  display: flex;
+  flex-direction: column;
+} */
+
+.dots {
+  position: relative;
+  top: 0;
+  left: 10%;
+  padding: 0;
+  margin: 0;
 }
