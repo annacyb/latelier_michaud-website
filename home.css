@@ -18,6 +18,48 @@ html {
     display: none;
 }
 
+
+.pointer {
+    cursor: pointer;
+}
+
+
+/*   Animations   */
+.fade_out {
+    
+    animation: fade_out 1s ease;
+}
+
+@keyframes fade_out {
+    
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade_in {
+    
+    animation: fade_in 2s ease;
+}
+
+@keyframes fade_in {
+    
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+/**/
+
+
+
+
 .button1 {
     font-size: 1.8rem;
     display: inline-block;
@@ -34,7 +76,7 @@ html {
 }
 
 .button1:hover {
-    color: #b17458;
+    color: #faf5f1;
     background-color:#b17458;
 }
 
@@ -90,7 +132,9 @@ main {
     grid-template-rows: 20px auto 25px 25px 1.5vw;
     grid-column-gap: 20px;
     grid-row-gap: 5px;
-    height: auto;
+    /* height: auto; */
+
+    height: 700px;
 }
 
 .slider-text {
@@ -209,7 +253,9 @@ main {
         grid-column-gap: 10px;
         grid-row-gap: 0;
     
-        height: auto;
+        /* height: auto; */
+
+        height: 650px;
     }
 
     
