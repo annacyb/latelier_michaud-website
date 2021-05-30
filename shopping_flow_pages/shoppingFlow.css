@@ -1,3 +1,31 @@
+@import url("https://use.typekit.net/wib3msp.css");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-button: #c58b71;
+  --color-font: #b17458;
+  --color-shape1: #8c9e6b;
+  --color-shape2: #f3decf;
+  --color-shape3: #f3cf90;
+  --color-background: #faf5f1;
+  --color-background2: #f5e8d6;
+
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  --font-2: "Work Sans", sans-serif;
+  --main-text-color: #3f4c5a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--main-text-color);
+  margin: 0;
+}
+
 /*ORDER DETAILS*/
 
 .backArrow {
@@ -28,7 +56,7 @@
 }
 
 .logIn span {
-  color: var(--color-2);
+  color: var(--color-font);
 }
 
 #shoppingbagDetails {
@@ -48,6 +76,7 @@
 .shoppingBagTitle h2 {
   margin: 0;
   margin-top: 0.8rem;
+  color: var(--color-font);
 }
 
 .shoppingBagTitle a {
@@ -139,6 +168,10 @@
   width: 185px;
 }
 
+.priceText .subtotal {
+  color: var(--color-font);
+}
+
 .priceAmount {
   width: 185px;
   text-align: right;
@@ -163,8 +196,7 @@
 }
 
 .couponDiv button {
-  background-color: white;
-  font-family: var(--font-1);
+  background-color: blanchedalmond;
   font-size: 0.8rem;
   text-transform: uppercase;
   border: solid 2px black;
@@ -201,6 +233,10 @@ form.paymentForm {
   display: flex;
   flex-direction: column;
   padding-right: 5rem;
+}
+
+.shippingDetails h2 {
+  color: var(--color-font);
 }
 
 .shippingDetails label {
@@ -279,9 +315,8 @@ form.paymentForm {
   width: 230px;
   height: 40px;
   border: none;
-  background-color: var(--color-2);
+  background-color: var(--color-button);
   color: white;
-  border-radius: 50px;
   font-size: 1.2rem;
   font-style: var(--font-1);
   margin-top: 1rem;
@@ -290,7 +325,7 @@ form.paymentForm {
 }
 
 .placeOrder:hover {
-  background-color: var(--color-3);
+  background-color: #92583f;
 }
 
 .placeOrder:active {
