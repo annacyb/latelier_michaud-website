@@ -6,8 +6,7 @@ function click_slider_dots(dot){
 
 
     if (dot_id.includes("1")) {
-        console.log("DOT 1 CLICKED")
-
+        
          // hide dot 2
 
          let slider2text = document.getElementById("slider2-text")
@@ -49,7 +48,6 @@ function click_slider_dots(dot){
 
     }
     if (dot_id.includes("2")) {
-        console.log("DOT 2 CLICKED")
 
         // hide dot 1
 
@@ -100,7 +98,6 @@ function click_slider_dots(dot){
 
     }
     if (dot_id.includes("3")) {
-        console.log("DOT 3 CLICKED")
 
         
         // hide dot 1
