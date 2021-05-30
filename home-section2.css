@@ -45,7 +45,7 @@ a#productlistLink {
     display: flex;
     flex-direction: row;
     place-content: space-evenly;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
     margin-right: 10vw;
     margin-left: 10vw;
     height: 22vw;
@@ -122,7 +122,7 @@ a#productlistLink {
 }
 
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
   
     #our_jewellery_2-grid {
         height: 420px;
@@ -171,6 +171,64 @@ a#productlistLink {
     #filter_products {
         width: 50vw;
     }
+} */
+
+
+
+@media (max-width: 750px) {
+
+    #our_jewellery-grid {
+        /* grid-column: 1/4;
+        grid-row: 1/2; */
+        display: flex;
+        flex-direction: row;
+        place-content: flex-start;
+
+        overflow-x: auto;
+
+        margin-right: 0;
+        margin-left: 0;
+
+        height: auto;
+    }
+
+    .sect2-product_container {
+        width: 33rem;
+    max-height: 400px;
+    }
+
+    .image-container-square {
+        width: 160px;
+        height: 160px;
+    }
+
+    .img-product {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle-image-border {
+        width: 165px;
+        height: 165px;
+        left: -8px;
+        top: -7px;
+    }
+
+    .product-name {
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        padding-top: 2rem;
+    }
+
+    .product-price-show {
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        padding-top: 1rem;
+    }
+    #filter_products {
+        width: 80vw;
+    }
+
 }
 
 
