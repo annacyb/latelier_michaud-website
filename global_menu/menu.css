@@ -200,8 +200,47 @@ nav .wrapper {
 /*MOBILE MENU*/
 #mobileMenu {
   height: 100px;
-  background-color: var(--color-shape3);
   visibility: hidden;
+}
+
+#mobileMenu nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainMobileMenu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+
+.mainMobileMenu li {
+  margin-bottom: 1rem;
+}
+
+.mainMobileMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.menuOptions a h2:hover {
+  color: #92583f;
+}
+
+.openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.logoMobile {
+  width: 160px;
+}
+
+.logoMobile img {
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 920px) {
@@ -223,5 +262,54 @@ nav .wrapper {
 
   #mobileMenu {
     visibility: visible;
+  }
+
+  .mainMobileMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background2);
+    transition: top 1s ease;
+    display: none;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .mainMobileMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .openMenu {
+    display: block;
+    margin-left: 2rem;
+  }
+
+  .menuOptions {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2px;
+  }
+
+  .menuOptions h2 {
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color-font);
+    margin-top: -0.5rem;
+  }
+
+  #mobileMenu .shoppingBagIcon {
+    margin-right: 2rem;
   }
 }
