@@ -280,6 +280,7 @@ body {
   padding: 8px;
   transition: 1s ease;
   width: 290px;
+  height: 290px;
 }
 
 .outsideCircle:hover {
@@ -293,7 +294,7 @@ body {
 
 .bagOne img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   margin: 0;
   border-radius: 200px;
@@ -394,6 +395,7 @@ a {
 
   .outsideCircle {
     width: 180px;
+    height: 180px;
   }
 
   .suggestionText {

@@ -1,19 +1,19 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
-const url = "https://kea2021-907c.restdb.io/rest/bags/" + id;
+const url = "https://kea21s-9328.restdb.io/rest/products" + id;
 // const mediaurl = "https://kea2021-907c.restdb.io/media/";
 
 /*API key*/
 const options = {
   headers: {
-    "x-apikey": "602e264f5ad3610fb5bb6267",
+    "x-apikey": "602e2b3b5ad3610fb5bb6298",
   },
 };
 
 fetch(url, {
   method: "GET",
   headers: {
-    "x-apikey": "602e264f5ad3610fb5bb6267",
+    "x-apikey": "602e2b3b5ad3610fb5bb6298",
   },
 })
   .then((res) => res.json())
@@ -29,11 +29,9 @@ function handleBags(bags) {
   document.querySelector("h1.nameBag").textContent = bags.name;
   document.querySelector("h1.priceBag").textContent = `${bags.price} DKK`;
   document.querySelector(".list li").textContent = bags.material;
-  document.querySelector(".product-pic img").src = bags.photo;
-  document.querySelector(".product-pic img:nth-child(2)").src = bags.photoOne;
-  document.querySelector(".product-pic img:nth-child(3)").src = bags.photoTwo;
-  document.querySelector(".product-pic img:nth-child(4)").src = bags.photoThree;
-  document.querySelector(".list li:nth-child(2)").textContent = bags.dimensions;
+  document.querySelector(".product-pic img").src = bags.photoOne;
+  document.querySelector(".product-pic img:nth-child(2)").src = bags.photoTwo;
+  document.querySelector(".product-pic img:nth-child(3)").src = bags.photoThree;
   document.querySelector(".bagDesc").textContent = bags.description;
 
   document.querySelector(".addCart2").addEventListener("click", () => {
@@ -138,8 +136,8 @@ const CART = {
         update(element);
       });
 
-      itemCopy.querySelector("img").src = element.photo;
-      itemCopy.querySelector(".bagColor").textContent = element.colour;
+      itemCopy.querySelector("img").src = element.photoOne;
+      itemCopy.querySelector(".bagColor").textContent = element.material;
       itemCopy.querySelector(".bagproductPrice").textContent = element.price;
 
       cartcontentEl.appendChild(itemCopy);
@@ -173,10 +171,10 @@ CART.init();
 
 /*API key*/
 
-const url1 = "https://kea2021-907c.restdb.io/rest/bags?max=5";
+const url1 = "https://kea21s-9328.restdb.io/rest/products?max=5";
 const options1 = {
   headers: {
-    "x-apikey": "602e264f5ad3610fb5bb6267",
+    "x-apikey": "602e2b3b5ad3610fb5bb6298",
   },
 };
 
@@ -208,7 +206,7 @@ function showRec(rec) {
   //change the content
   copy.querySelector(".p").textContent = rec.name;
   copy.querySelector(".price").textContent = `${rec.price} DKK`;
-  copy.querySelector("img").src = rec.photo;
+  copy.querySelector("img").src = rec.photoOne;
 
   //grab the parent
   const parent = document.querySelector(".recProducts");
