@@ -195,7 +195,11 @@ main {
 
 
 #help_climate_3-grid {
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: auto;
     background-color: white;
 }
 
@@ -220,6 +224,27 @@ main {
 }
 
 
+/* section 3 */
+
+#img-1jewellery-1plant-desktop {
+    width: 50vw;
+    height: auto;
+
+}
+
+#img-1jewellery-1plant-mobile {
+    display: none;
+}
+
+#sect3-text-p {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    width: 40vw;
+    text-align: center;
+}
+
+
+
 @media (max-width: 1300px) {
 
     html {
@@ -232,6 +257,8 @@ main {
     html {
         font-size: 6px;
     }
+
+
 }
 
 
@@ -307,4 +334,25 @@ main {
         margin-top: 3rem;
     }
     
+    /* from section 3 */
+    #img-1jewellery-1plant-desktop {
+        display: none;
+    }
+
+    #img-1jewellery-1plant-mobile {
+        display: block;
+        width: 60vw;
+        height: auto;
+    }
+
+    #sect3-text-p {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 500px) {
+    #img-1jewellery-1plant-mobile {
+        width: 80vw;
+        height: auto;
+    }
 }
