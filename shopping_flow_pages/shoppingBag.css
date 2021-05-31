@@ -375,17 +375,116 @@ a {
   color: var(--main-text-color);
 }
 
+@media only screen and (max-width: 950px) {
+  .items,
+  .itemsTwo {
+    margin: 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .orderSummary {
+    margin-left: 8vw;
+  }
+
+  .recProducts {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .outsideCircle {
+    width: 180px;
+  }
+
+  .suggestionText {
+    margin-left: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .orderSummary {
+    margin-left: 5vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .orderSummary {
+    margin-left: -3rem;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .items {
+    margin: 0;
+    margin-left: 10rem;
+  }
+
+  .subtotalPrice {
+    margin-right: 4rem;
+  }
+
+  .itemsTwo {
+    margin: 0;
+    margin-left: 10rem;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .orderSummary {
+    margin: 0;
+    margin-left: 2rem;
+  }
+
+  .items {
+    margin: 0;
+  }
+
+  .itemsTwo {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .orderSummary {
+    margin: 0;
+    margin-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .orderSummary {
+    margin: 0;
+    margin-left: 0.5rem;
+    padding-right: 1rem;
+  }
+
+  .lineL {
+    width: 280px;
+  }
+
+  .b {
+    font-size: 1rem;
+    font-family: ivypresto-display, serif;
+    width: 250px;
+    height: 35px;
+    align-self: center;
+    cursor: pointer;
+    margin: 0.5rem;
+    padding: 0;
+  }
+}
+
 @media only screen and (min-width: 900px) {
   .orderSummary {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .items,
   .itemsTwo {
-    margin: 0;
-    margin-right: 1rem;
-    margin-left: 2rem;
+    margin: 0 4rem;
   }
 
   .bagOne {
