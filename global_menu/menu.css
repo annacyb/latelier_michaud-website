@@ -1,0 +1,315 @@
+@import url("https://use.typekit.net/wib3msp.css");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-button: #c58b71;
+  --color-font: #b17458;
+  --color-shape1: #8c9e6b;
+  --color-shape2: #f3decf;
+  --color-shape3: #f3cf90;
+  --color-background: #faf5f1;
+  --color-background2: #f5e8d6;
+
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  --font-2: "Work Sans", sans-serif;
+  --main-text-color: #3f4c5a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font: var(--font-1);
+  color: var(--main-text-color);
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+/*DESKTOP MENU*/
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  height: 65px;
+  line-height: 65px;
+}
+
+nav .wrapper {
+  position: relative;
+  max-width: 100vw;
+  padding: 0 30px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .logo a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 140px;
+  height: 140px;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.wrapper .nav-links {
+  display: inline-flex;
+  margin-left: -8rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.mainMenuA {
+  display: inline-block;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.mainMenuA:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 1;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: var(--color-font);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  margin-top: -1.3rem;
+}
+.mainMenuA:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.nav-links li:hover .megaBox {
+  top: 95px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.missionMenu {
+  display: flex;
+}
+
+.leafIcon {
+  height: 0;
+  width: 18px;
+}
+
+.leafIcon img {
+  max-width: 100%;
+}
+
+.megaBox {
+  position: absolute;
+  top: 100px;
+  background-color: var(--color-background2);
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.megaBox .content {
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.row {
+  line-height: 32px;
+}
+
+.rowV2 {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.rowV2 .row a {
+  margin: 0;
+  padding: 0;
+}
+
+.mega-links {
+  margin: 0;
+  padding: 0;
+}
+
+.mega-links li a {
+  margin: 0;
+  padding: 0;
+}
+
+.mega-links li a:hover {
+  color: #92583f;
+  text-decoration: none;
+}
+
+.rowV2 .row a h1:hover {
+  color: #92583f;
+}
+
+.row h1 {
+  color: var(--color-font);
+  font-weight: 800;
+  font-style: italic;
+}
+
+.imgHolder {
+  width: 200px;
+  height: auto;
+}
+
+.imgHolder img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 100px;
+}
+
+.searchCart {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/*MOBILE MENU*/
+#mobileMenu {
+  height: 100px;
+  visibility: hidden;
+}
+
+#mobileMenu nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainMobileMenu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+
+.mainMobileMenu li {
+  margin-bottom: 1rem;
+}
+
+.mainMobileMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.menuOptions a h2:hover {
+  color: #92583f;
+}
+
+.openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+.logoMobile {
+  width: 160px;
+}
+
+.logoMobile img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 920px) {
+  .logo {
+    width: 120px;
+    height: 120px;
+    margin-left: 0.5rem;
+  }
+
+  .logo img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  #desktopMenu {
+    visibility: hidden;
+  }
+
+  #mobileMenu {
+    visibility: visible;
+  }
+
+  .mainMobileMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background2);
+    transition: top 1s ease;
+    display: none;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .mainMobileMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .openMenu {
+    display: block;
+    margin-left: 2rem;
+  }
+
+  .menuOptions {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2px;
+  }
+
+  .menuOptions h2 {
+    font-weight: 700;
+    font-style: italic;
+    color: var(--color-font);
+    margin-top: -0.5rem;
+  }
+
+  #mobileMenu .shoppingBagIcon {
+    margin-right: 2rem;
+  }
+}
