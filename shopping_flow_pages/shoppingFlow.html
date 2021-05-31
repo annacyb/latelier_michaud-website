@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order details</title>
     <link rel="stylesheet" href="shoppingFlow.css" />
-    <link rel="stylesheet" href="style.css" />
   </head>
 
 
   <body id="shoppingFlow">
     <section id="orderDetails">
+      <div class="SFheaderPic">
+        <div class="SFlogoContainer">
+        <img class="logoSF" src="../images/logo-latelier_michaud.png" alt="logo">
+      </div>
+      </div>
     <div>
-      <a class="backArrow" href="../shopping-bag.html">
+      <a class="backArrow" href="shoppingBag.html">
           <div class="arrowBox">
-        <img src="../images/SVG/arrow.svg" />
+        <img src="../images/back-arrow.svg" />
     </div>
         <p>Back to shopping bag</p>
       </a>
@@ -29,21 +33,21 @@
     <section id="shoppingbagDetails">
       <div class="shoppingBagTitle">
         <h2>SHOPPING BAG</h2>
-        <a href="#"><button class="editButton">EDIT</button></a>
+        <a href="shoppingBag.html"><button class="editButton">EDIT</button></a>
       </div>
 
       <div class="orderSummary">
         <div class="orderItem">
           <div class="bagproductImg">
             <img
-              src="https://anasofich.github.io/SILFEN-website/photos/bibbi-nylon-blue.jpg"
+              src="https://raw.githubusercontent.com/annacyb/latelier_michaud-website/master/photos/folia-earrings-gold-1.jpg"
             />
           </div>
           <div class="bagproductInfo">
-            <h3 class="bagName">Bibbi Nylon</h3>
-            <p>Material: <span class="bagColor">light blue</span></p>
+            <h3 class="bagName">Folia earrings</h3>
+            <p>Material: <span class="bagColor">Gold</span></p>
             <p>Quantity: <span class="bagQuantity">2</span></p>
-            <p class="bagproductPrice">1200 DKK</p>
+            <p class="bagproductPrice">3600 DKK</p>
             <div class="lineS"></div>
           </div>
         </div>
@@ -51,14 +55,14 @@
         <div class="orderItem">
           <div class="bagproductImg">
             <img
-              src="https://anasofich.github.io/SILFEN-website/photos/bibbi-nylon-green.jpg"
+              src="https://raw.githubusercontent.com/annacyb/latelier_michaud-website/master/photos/rina-ring-silver.jpg"
             />
           </div>
           <div class="bagproductInfo">
-            <h3 class="bagName">Bibbi Nylon</h3>
-            <p>Material: <span class="bagColor">green</span></p>
+            <h3 class="bagName">Rina ring</h3>
+            <p>Material: <span class="bagColor">Silver</span></p>
             <p>Quantity: <span class="bagQuantity">1</span></p>
-            <p class="bagproductPrice">600 DKK</p>
+            <p class="bagproductPrice">2000 DKK</p>
             <div class="lineS"></div>
           </div>
         </div>
@@ -72,9 +76,9 @@
                 <p class="subtotal">Subtotal</p>
             </div>
             <div class="priceAmount">
-                <p class="orderValue">1800 DKK</p>
+                <p class="orderValue">5600 DKK</p>
                 <p class="delivery">FREE</p>
-                <p class="subtotal">1800 DKK</p>
+                <p class="subtotal">5600 DKK</p>
             </div>
           </p>
         </div>
@@ -196,7 +200,7 @@
 
     </div>
 
-    <input class="placeOrder" type="submit" value="PLACE ORDER" data-id="">
+    <input class="placeOrder" type="submit" value="Place order" data-id="">
 
     </form>
 </section>
@@ -204,10 +208,15 @@
 </section>
 
 <section id="orderConfirmation" class="hidden">
+  <div class="SFheaderPic">
+    <div class="SFlogoContainer">
+    <img class="logoSF" src="../images/logo-latelier_michaud.png" alt="logo">
+  </div>
+  </div>
   <div>
     <a class="backArrow" href="../index.html">
         <div class="arrowBox">
-      <img src="../images/SVG/arrow.svg" />
+      <img src="../images/back-arrow.svg" />
   </div>
       <p>Back to shop</p>
     </a>
@@ -249,14 +258,14 @@
     <div class="orderItem">
       <div class="bagproductImg">
         <img
-          src="https://anasofich.github.io/SILFEN-website/photos/bibbi-nylon-blue.jpg"
+          src="https://raw.githubusercontent.com/annacyb/latelier_michaud-website/master/photos/folia-earrings-gold-1.jpg"
         />
       </div>
       <div class="bagproductInfo">
-        <h3 class="bagName">Bibbi Nylon</h3>
-        <p>Color: <span class="bagColor">light blue</span></p>
+        <h3 class="bagName">Folia earrings</h3>
+        <p>Material: <span class="bagColor">Gold</span></p>
         <p>Quantity: <span class="bagQuantity">2</span></p>
-        <p class="bagproductPrice">1200 DKK</p>
+        <p class="bagproductPrice">3600 DKK</p>
         <div class="lineS"></div>
       </div>
     </div>
@@ -264,14 +273,14 @@
     <div class="orderItem">
       <div class="bagproductImg">
         <img
-          src="https://anasofich.github.io/SILFEN-website/photos/bibbi-nylon-green.jpg"
+          src="https://raw.githubusercontent.com/annacyb/latelier_michaud-website/master/photos/rina-ring-silver.jpg"
         />
       </div>
       <div class="bagproductInfo">
-        <h3 class="bagName">Bibbi Nylon</h3>
-        <p>Color: <span class="bagColor">green</span></p>
+        <h3 class="bagName">Rina ring</h3>
+        <p>Material: <span class="bagColor">Silver</span></p>
         <p>Quantity: <span class="bagQuantity">1</span></p>
-        <p class="bagproductPrice">600 DKK</p>
+        <p class="bagproductPrice">2000 DKK</p>
         <div class="lineS"></div>
       </div>
     </div>
@@ -295,7 +304,7 @@
 </section>
 
   <div class="backtoShop">
-  <a href="../index.html"><button>BACK TO SHOP</button></a>
+  <a href="../index.html"><button>Back to shop</button></a>
 </div>
 </section>
 
