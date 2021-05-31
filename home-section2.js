@@ -122,7 +122,6 @@ function showProduct(data, url) {
 
 
 function click_filter(filter_button) {
-    //DODAC toogle_click_filter- zmienia styl przycisku z underlined na odwrotnie i odwrotnie
 
     if (filter_button.id == 'filter1') {
         newIn_filter = true

@@ -147,7 +147,6 @@ function click_slider_dots(dot){
 
 
 
-
 function setup_listeners_slider_dots() {
     let dot1 = document.getElementById("slider-dot1")
     let dot2 = document.getElementById("slider-dot2")
