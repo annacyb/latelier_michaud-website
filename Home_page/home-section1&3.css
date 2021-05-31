@@ -146,6 +146,7 @@ main {
 .slider-image {
     grid-column: 5 / span 5;
     grid-row: 2/ span 1; 
+    margin: auto;
 }
 
 .slider-image-set_up {
@@ -188,7 +189,7 @@ main {
 }
 
 .dot_space {
-    width: 1.5rem;
+    width: 2.5rem;
     height: auto;
     display: inline-block;
 }
@@ -287,6 +288,8 @@ main {
         display: block;
     }
 
+    
+
     .slider-text {
         align-self: auto;
     
@@ -354,5 +357,13 @@ main {
     #img-1jewellery-1plant-mobile {
         width: 80vw;
         height: auto;
+    }
+
+    .dot_space {
+        width: 5.5rem;
+    }
+
+    .h3-regular {
+        font-size: 3rem;
     }
 }

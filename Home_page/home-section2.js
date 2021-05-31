@@ -15,8 +15,7 @@ function resetFilterProducts(){
 
 
 function load_data_newIn_or_mostPopular(newIn_filter) {
-    console.log("________")
-    console.log(newIn_filter)
+
     let url = ''
     if (newIn_filter == true) {
         url = `https://kea21s-9328.restdb.io/rest/products?q=%7B%22newIn%22%3A%20true%7D`
@@ -125,7 +124,6 @@ function click_filter(filter_button) {
 
     if (filter_button.id == 'filter1') {
         newIn_filter = true
-        console.log("fil 1")
 
         let unselected_button = document.querySelector("#filter2")
         unselected_button.classList.remove("selected_filter")
@@ -137,7 +135,6 @@ function click_filter(filter_button) {
     }
     if (filter_button.id == 'filter2'){
         newIn_filter = false
-        console.log("fil 2")
 
         let unselected_button = document.querySelector("#filter1")
         unselected_button.classList.remove("selected_filter")
@@ -164,7 +161,6 @@ function listeners_filters() {
 
 function main() {
     fetchNewIn()
-    console.log(newIn_filter)
     listeners_filters()
 }
 
