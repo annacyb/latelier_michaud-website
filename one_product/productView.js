@@ -1,3 +1,55 @@
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+const url =
+  "https://kea21s-9328.restdb.io/rest/products/60b2349860d0d67b00020dc7";
+
+// const url = "https://kea21s-9328.restdb.io/rest/products/" + id;
+// const mediaurl = "https://kea2021-907c.restdb.io/media/";
+
+/*API key*/
+const options = {
+  headers: {
+    "x-apikey": "602e2b3b5ad3610fb5bb6298",
+  },
+};
+
+fetch(url, {
+  method: "GET",
+  headers: {
+    "x-apikey": "602e2b3b5ad3610fb5bb6298",
+  },
+})
+  .then((res) => res.json())
+  .then((response) => {
+    handleProducts(response);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+function handleProducts(product) {
+  //console.log(bags);
+  document.querySelector(".priceName h2").textContent = product.name;
+  document.querySelector(".priceName p").textContent = `${product.price} DKK`;
+  // document.querySelector(".list li").textContent = bags.material;
+  document.querySelector(".first").src = product.photoOne;
+  document.querySelector(".second").src = product.photoTwo;
+  document.querySelector(".third").src = product.photoThree;
+  document.querySelector(".description li").textContent = product.description;
+
+  if (product.materialType) {
+    document.querySelector(".material h3:nth-child(1)").classList.add("cross");
+  } else {
+    document.querySelector(".material h3:nth-child(3)").classList.add("cross");
+  }
+
+  // document.querySelector(".addCart2").addEventListener("click", () => {
+  //   //alert("hey!");
+  //   //console.log(bags);
+  //   CART.add(bags);
+  // });
+}
+
 var slideIndex = 1;
 
 var myTimer;
