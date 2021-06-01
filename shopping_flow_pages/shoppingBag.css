@@ -1,0 +1,533 @@
+@import url("https://use.typekit.net/wib3msp.css");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-button: #c58b71;
+  --color-font: #b17458;
+  --color-shape1: #8c9e6b;
+  --color-shape2: #f3decf;
+  --color-shape3: #f3cf90;
+  --color-background: #faf5f1;
+  --color-background2: #f5e8d6;
+
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  --font-2: "Work Sans", sans-serif;
+  --main-text-color: #3f4c5a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--main-text-color);
+  margin: 0;
+}
+
+/*ORDER DETAILS*/
+
+.backArrow {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+
+.backArrow {
+  text-decoration: none;
+}
+
+.backArrow img {
+  max-width: 6%;
+}
+
+.logIn {
+  text-align-last: center;
+  margin-top: -1rem;
+}
+
+.logIn span {
+  color: var(--color-2);
+}
+/* 
+  #shoppingbagDetails {
+    margin: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.12);
+  } */
+
+.shoppingBagTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.shoppingBagTitle h2 {
+  margin: 0;
+  margin-top: 0.8rem;
+}
+
+.shoppingBagTitle a {
+  text-align: right;
+}
+
+.shoppingBagTitle button {
+  background-color: white;
+  border: solid 2px black;
+  box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, 0.12);
+  width: 60px;
+}
+
+.shoppingBagTitle button:hover,
+.shoppingBagTitle button:active {
+  background-color: #c2c2c2;
+  cursor: pointer;
+}
+
+.shoppingBagTitle button:active {
+  box-shadow: none;
+}
+
+.orderItem {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.bagproductImg {
+  width: 140px;
+  height: 140px;
+}
+
+.bagproductImg img {
+  max-width: 100%;
+  border-radius: 200px;
+}
+
+.bagproductInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  width: 160px;
+}
+
+.bagproductInfo * {
+  margin: 0;
+  margin-top: 0.3rem;
+}
+
+.bagName {
+  text-transform: none;
+}
+
+.bagproductPrice {
+  align-self: flex-end;
+  font-family: var(--font-2);
+}
+
+.lineS {
+  width: 170px;
+  height: 2px;
+  background-color: gray;
+  position: relative;
+  z-index: -1;
+}
+
+.lineL {
+  width: 350px;
+  height: 2px;
+  background-color: gray;
+  position: relative;
+  z-index: -1;
+}
+
+.orderSummary {
+  margin-top: 3rem;
+}
+
+.orderPrice {
+  margin-left: 0.5rem;
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.orderPrice * {
+  margin: 0;
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+}
+
+.priceText {
+  width: 185px;
+  font-family: var(--font-2);
+  font-weight: 500;
+}
+
+.priceAmount {
+  width: 185px;
+  text-align: right;
+}
+
+.orderValue {
+  font-family: var(--font-2);
+}
+
+.delivery {
+  font-family: var(--font-2);
+}
+
+.items .subtotal {
+  color: var(--main-text-color);
+}
+
+.subtotal {
+  margin-top: 1rem;
+  font-weight: 800;
+  color: var(--color-font);
+}
+
+.subtotalPrice {
+  font-family: var(--font-2);
+  color: var(--main-text-color);
+}
+
+.couponDiv {
+  display: flex;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.couponDiv input {
+  margin-top: 0.6rem;
+  width: 185px;
+  height: 30px;
+}
+
+.couponDiv button {
+  background-color: var(--color-button);
+  color: white;
+  font-family: var(--font-2);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 5px 6px -2px rgba(0, 0, 0, 0.12);
+  width: 150px;
+  height: 35px;
+  margin-top: 0.5rem;
+  transition: 0.5s ease;
+}
+
+.couponDiv button:hover,
+.couponDiv button:active {
+  background-color: #92583f;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.couponDiv button:active {
+  box-shadow: none;
+}
+
+.similar {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 7%;
+  color: var(--color-font);
+}
+
+.shoppingBag {
+  font-size: 1.2rem;
+  margin: 2rem 0 0 0.4rem;
+  color: var(--color-font);
+}
+
+.subtotalFinal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#suggestions {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-bottom: 5%;
+}
+
+.bagOne {
+  width: 10em;
+}
+
+#suggestions .bagOne {
+  display: inline-block;
+  margin: 0;
+}
+
+.outsideCircle {
+  border: solid 3px #edd3c0;
+  border-radius: 200px;
+  padding: 8px;
+  transition: 1s ease;
+  width: 290px;
+  height: 290px;
+}
+
+.outsideCircle:hover {
+  border: solid 3px #b17458;
+  transition: 1s ease;
+}
+
+.outsideCircle:hover.price {
+  visibility: visible;
+}
+
+.bagOne img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  border-radius: 200px;
+}
+
+.suggestionText {
+  margin-left: -2rem;
+}
+
+.p {
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  font-style: var(--font-2);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 200;
+  margin: 0;
+}
+
+.proceed {
+  background-color: var(--color-button);
+  color: white;
+  border: none;
+  transition: 0.5s ease;
+}
+
+.continue {
+  background-color: var(--color-background);
+  color: var(--color-button);
+  border: 2px solid var(--color-button);
+  transition: 0.5s ease;
+}
+
+.proceed:hover {
+  background-color: #92583f;
+  transition: 0.5s ease;
+}
+
+.continue:hover {
+  background-color: #e2c7bb;
+  transition: 0.5s ease;
+}
+
+.b {
+  font-size: 1rem;
+  font-family: ivypresto-display, serif;
+  width: 300px;
+  height: 35px;
+  align-self: center;
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+a {
+  margin-left: 0.8rem;
+  padding: 0;
+}
+
+.similarSlider {
+  background-color: var(--color-background2);
+  padding-bottom: 1rem;
+}
+
+.similarSlider .similar {
+  padding-top: 2rem;
+  color: var(--main-text-color);
+}
+
+@media only screen and (max-width: 950px) {
+  .items,
+  .itemsTwo {
+    margin: 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 899px) {
+  .orderSummary {
+    margin-left: 8vw;
+  }
+
+  .recProducts {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .outsideCircle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .suggestionText {
+    margin-left: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .orderSummary {
+    margin-left: 5vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .orderSummary {
+    margin-left: -3rem;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .items {
+    margin: 0;
+    margin-left: 10rem;
+  }
+
+  .subtotalPrice {
+    margin-right: 4rem;
+  }
+
+  .itemsTwo {
+    margin: 0;
+    margin-left: 10rem;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .orderSummary {
+    margin: 0;
+    margin-left: 2rem;
+  }
+
+  .items {
+    margin: 0;
+  }
+
+  .itemsTwo {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .orderSummary {
+    margin: 0;
+    margin-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .orderSummary {
+    margin: 0;
+    margin-left: 0.5rem;
+    padding-right: 1rem;
+  }
+
+  .lineL {
+    width: 280px;
+  }
+
+  .b {
+    font-size: 1rem;
+    font-family: ivypresto-display, serif;
+    width: 250px;
+    height: 35px;
+    align-self: center;
+    cursor: pointer;
+    margin: 0.5rem;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .orderSummary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .items,
+  .itemsTwo {
+    margin: 0 4rem;
+  }
+
+  .bagOne {
+    width: 20em;
+  }
+
+  .similar {
+    font-size: 2rem;
+  }
+
+  .orderSummary {
+    margin-top: 0;
+  }
+
+  .shoppingBag {
+    margin-top: 0;
+  }
+
+  .bagproductImg {
+    width: 220px;
+    height: 220px;
+  }
+
+  .lineL {
+    width: 400px;
+  }
+  .bagName {
+    font-size: 1.3rem;
+  }
+
+  p,
+  .bagColor,
+  .bagQuantity {
+    font-size: 0.9rem;
+  }
+
+  .price {
+    text-align: center;
+    justify-content: center;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+  }
+}
