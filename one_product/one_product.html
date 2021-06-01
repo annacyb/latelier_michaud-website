@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="productView.css" />
+    <title>Product View</title>
+  </head>
+  <body>
+    <main>
+      <section class="productDetails">
+        <div class="slideshow-container">
+          <div class="slideshow">
+          <div class="slideshow-inner">
+            <div class="mySlides fade">
+              <img class="first" src="earrings.jpg" alt="Atelier Michaud Photos"/>
+            </div>
+            <div class="mySlides fade">
+              <img class="second" src="earrings.jpg"  alt="Atelier Michaud Photos"/>
+            </div>
+            <div class="mySlides fade">
+              <img  class="third" src="earrings.jpg"  alt="Atelier Michaud Photos"/>
+            </div>
+         
+           
+            </div>
+            <div class="dots">
+              <span class="dot" onclick='currentSlide(1)'></span>
+              <span class="dot" onclick='currentSlide(2)'></span>
+              <span class="dot" onclick='currentSlide(3)'></span>
+            </div>
+          </div>
+        
+        </div>
+          <br/>
+          
+          
+         
+          
+          </div>       
+      </div>
+      </div>
+        <div class="productInfo">
+          <div class="priceName">
+            <h2>Golden Earrings</h2>
+            <p>1000 DKK</p>
+          </div>
+          <div class="materialSize">
+            <div class="materialType">
+              <h2>Material</h2>
+              <div class="material">
+                <h3>Silver</h3>
+                <div class="line">|</div>
+                <h3>Gold</h3>
+              </div>
+            </div>
+            <div class="size">
+              <h3>Size</h3>
+              <label>
+                <select name="size">
+                  <option>S (50-52)</option>
+                  <option>M (52-54)</option>
+                  <option>L (54-56)</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="stone">
+            <h3>Stone colour</h3>
+            <div class="stones">
+              <div class="stone green">
+                <img src="stone-yellow.png" />
+              </div>
+              <div class="stone blue">
+                <img src="stone-blue.png" />
+              </div>
+              <div class="stone black">
+                <img src="stone-purple.png" />
+              </div>
+              <div class="stone beige"><img src="stone-red.png" /></div>
+            </div>
+          </div>
+          <div class="qty">
+            <label>
+              <select name="quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </label>
+            <button class="addCart hide">Add to cart</button>
+          </div>
+          <div class="valueList">
+            <article class="values">
+              <div class="value">
+                <img class="icon" src="hand-icon.png" />
+                <h3>ethical production</h3>
+              </div>
+              <div class="value">
+                <img class="icon" src="tool-icon.png" />
+                <h3>handmade products</h3>
+              </div>
+              <div class="value">
+                <img class="icon" src="diamon-icon.png" />
+                <h3>unique & timeless design</h3>
+              </div>
+              <div class="value">
+                <img class="icon" src="earth-icon.png" />
+                <h3>sustainable mission</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="productDescription">
+        <div class="dropdown">
+          <ul class="dropdownList">
+            <li>
+             Description +
+              <ul class="list description">
+                <li></li>
+               
+              </ul>
+            </li>
+          </ul>
+          <ul class="dropdownList">
+            <li>
+           Care Instructions +</i>
+              <ul class="list">
+                <li>It is recommended to take it off for sleep or for bath. Try keeping the products away from moisture and from spraying the perfumes directly on the jewellery to maintain the highest quality for a long time.</li>
+               
+              </ul>
+            </li>
+          </ul>
+          <ul class="dropdownList">
+            <li>
+              Delivery & returns +</i>
+              <ul class="list2">
+                <li>
+                  Please note that every jewelry is handmade by order, and the delivery time will be up to 30 days from purchase. 
+                </li>
+               
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="image-stack">
+      <div class="image-stack__item image-stack__item--top">
+        <img src="earrings.jpg" alt="A portrait of a girl under hanging flowers.">
+      </div>
+      <div class="image-stack__item image-stack__item--bottom">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/portrait-1-cropped.jpg" alt="">
+      </div>
+    </div>
+      </section>
+<!-- 
+      <div id="our_jewellery-grid">
+
+
+        <template class="sect2-product-template">
+            <a class="" id="productlistLink" href="">
+                <div class="sect2-product_container">
+                    <div class="image-container-square">
+                        <img class="img-product" src="./photos/earrings-photo.png" alt="">
+                        <span class="circle-image-border"></span>
+                    </div>
+                    <p class="product-name">Name of the product</p>
+                    <p class="price product-price-show"></p>
+                </div>
+            </a>
+          </template>
+</div> -->
+    </main>
+    <script src="productView.js"></script>
+  </body>
+</html>
