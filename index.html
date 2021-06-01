@@ -7,7 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index,follow" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="./Home_page/home-section1&3.css" />
+    <link rel="stylesheet" href="./Home_page/home-section2.css" />
+    <link rel="stylesheet" href="./Home_page/home-section4.css" />
+    <link rel="stylesheet" href="./Home_page/home-section5.css" />
+    <link rel="stylesheet" href="./Home_page/home-section6.css" />
+    <link rel="stylesheet" href="./Home_page/home-section7.css" />
     <link rel="shortcut icon" type="image/png" href="images/logo-latelier_michaud.png" />
 
     <title>Home page</title>
@@ -19,13 +24,283 @@
 
 <body>
     <main>
+        <section id="hero_section_1-grid">
+
+            <div id="slider1-text" class="slider-text">
+                <h1 class="h1-regular">Handmade jewellery</h1>
+                <h1 class="h1-italic text-green">made with care</h1>
+
+                <p class="p-regular">Our vision is to create jewellery that gives
+                    power and confidence to women. Moreover, we want to inspire people to how they can help our
+                    climate through small steps and initiatives.</p>
+
+                <a href="" class="button1 pointer">Read more</a>
+            </div>
+
+
+            <div id="slider2-text" class="slider-text hidden">
+                <h1 class="h1-regular">New collection</h1>
+                <h1 class="h1-italic text-brown">Moringa</h1>
+
+                <p class="p-regular">Discover our new collection inspired by the life-giving Moringa tree and it's
+                    organic shapes. All silver used in the collection is recycled and stones are natural, untreated, and
+                    responsibly sourced.</p>
+
+                <a href="" class="button1 pointer">See collection</a>
+            </div>
+
+
+            <div id="slider3-text" class="slider-text hidden">
+                <h1 class="h1-regular">Perfect gift for someone special?</h1>
+                <h1 class="h1-italic text-green">Get a gift card</h1>
+
+                <p class="p-regular">Finding the right gift can be a challenge. We have a range of gift card options
+                    available. You can empower your loved one or friend to choose jewellery that speaks straight to
+                    their heart.</p>
+
+                <a href="" class="button1 pointer">Buy a gift card</a>
+            </div>
+
+
+            <div id="slider1-image" class="slider-image">
+                <img src="photos/slider1-big.png" id="slider1-big" class="slider-image-set_up">
+                <img src="photos/slider1-small.png" id="slider1-small" class="slider-image-set_up">
+            </div>
+
+            <div id="slider2-image" class="slider-image hidden">
+                <img src="photos/slider2-big.png" id="slider2-big" class="slider-image-set_up">
+                <img src="photos/slider2-small.png" id="slider2-small" class="slider-image-set_up">
+            </div>
+
+            <div id="slider3-image" class="slider-image hidden">
+                <img src="photos/slider3-big.png" id="slider3-big" class="slider-image-set_up">
+                <img src="photos/slider3-small.png" id="slider3-small" class="slider-image-set_up">
+            </div>
+
+
+            <div id="slider_pagination">
+                <span id="slider-dot1" class="dot-filled pointer"></span>
+                <span class="dot_space"></span>
+                <span id="slider-dot2" class="dot pointer"></span>
+                <span class="dot_space"></span>
+                <span id="slider-dot3" class="dot pointer"></span>
+            </div>
+        </section>
+
+        <section id="our_jewellery_2-grid">
+            <div class="section-width">
+                <h2 class="h2-regular">OUR JEWELLERY</h2>
+            </div>
+
+            <div id="filter_products">
+                <div>
+                    <h3 id="filter1" class="h3-regular pointer selected_filter">New in</h3>
+                </div>
+                <div>
+                    <h3 id="filter2" class="h3-regular pointer">Most popular</h3>
+                </div>
+            </div>
+
+            <div id="our_jewellery-grid">
+
+
+                <template class="sect2-product-template">
+                    <a class="" id="productlistLink" href="">
+                        <div class="sect2-product_container">
+                            <div class="image-container-square">
+                                <img class="img-product" src="./photos/earrings-photo.png" alt="">
+                                <span class="circle-image-border"></span>
+                            </div>
+                            <p class="product-name">Name of the product</p>
+                            <p class="price product-price-show"></p>
+                        </div>
+                    </a>
+                </template>
+
+
+            </div>
+            <div id="button-all_products" style="text-align: center; padding-bottom: 6rem;">
+                <a href="" class="button1 pointer">See all products</a>
+            </div>
+
+        </section>
+
+
+        <section id="help_climate_3-grid">
+            <div class="section-width">
+                <h2 class="h2-regular"><span class="text-green">Help to fight</span> Climate Change</h2>
+            </div>
+            <div class="section-width">
+                <p id="sect3-text-p" class="p-regular">We help to plant trees all around the world with Tree-Nation
+                    organisation and offseting CO2 emissions.
+                </p>
+            </div>
+            <div class="section-width">
+                <img id="img-1jewellery-1plant-desktop" src="./photos/1JewelleryPiece-1TreePlanted-desktop.png"
+                    alt="1 Jewellery piece = 1 Tree planted">
+                <img id="img-1jewellery-1plant-mobile" src="./photos/1JewelleryPiece-1TreePlanted-mobile.png"
+                    alt="1 Jewellery piece = 1 Tree planted">
+            </div>
+            <div>
+                <a href="" class="button1 pointer" style="margin-bottom: 5rem; margin-top: 4rem;">Get to know more</a>
+            </div>
+
+
+        </section>
+
+
+        <section id="our_values_4-grid">
+            <div id="section4-img">
+                <img class="img-width" src="photos/home-section4.png" alt="">
+            </div>
+            <div id="section4-h2">
+                <h2 class="h2-regular" style="text-align: left; padding-bottom: 2rem; padding-top: 0;">Our values</h2>
+            </div>
+            <div id="section4-p">
+                <p id="sect3-text-p" style="text-align: left; width: auto;" class="p-regular">The brand’s aim is to
+                    create unique,
+                    handcrafted design that will
+                    make women feel beautiful and strong.
+                    <br><br>
+                    Furthermore, we strongly believe in our own responsibility towards climate change. That is why all
+                    our jewellery is made using only bio gold, recycled sterling silver and certified precious stones.
+                </p>
+            </div>
+            <div id="section4-icons">
+                <div class="icon-container">
+                    <img src="photos/home-icon1.png" class="section4-icon" alt="">
+                    <p class="p-regular" style="font-family: ivypresto-display, serif; padding-top: 2rem;">Ethical
+                        production</p>
+                </div>
+                <div class="icon-container">
+                    <img src="photos/home-icon2.png" class="section4-icon" alt="">
+                    <p class="p-regular" style="font-family: ivypresto-display, serif; padding-top: 2rem;">Handmade
+                        products</p>
+                </div>
+                <div class="icon-container">
+                    <img src="photos/home-icon3.png" class="section4-icon" alt="">
+                    <p class="p-regular" style="font-family: ivypresto-display, serif; padding-top: 2rem;">Unique &
+                        timeless design</p>
+                </div>
+                <div class="icon-container">
+                    <img src="photos/home-icon4.png" class="section4-icon" alt="">
+                    <p class="p-regular" style="font-family: ivypresto-display, serif; padding-top: 2rem;">Sustainable
+                        mission</p>
+                </div>
+            </div>
+            <div id="section4-button">
+                <a href="" class="button1 pointer" style="margin-bottom: 0; margin-top: 2vw;">Read more</a>
+            </div>
+
+        </section>
+
+
+
+        <section id="jewellery_types_5-grid">
+            <div id="section5-h2">
+                <h2 class="h2-regular" style="padding-bottom: 4rem; padding-top: 0;">TYPES OF
+                    PRODUCTS</h2>
+            </div>
+
+            <div id="section5-images">
+                <a class="pointer" style="text-decoration: none;" id="category1" href="">
+                    <div class="section5-image-container">
+                        <img src="photos/home-category-earrings.png" class="section5-image" alt="Earrings category">
+                        <div class="hidden"></div>
+                        <p class="p-regular p-category">Earrings</p>
+                    </div>
+                </a>
+                <a class="pointer" style="text-decoration: none;" id="category2" href="">
+                    <div class="section5-image-container" style="padding-top: 3rem;">
+                        <img src="photos/home-category-rings.png" class="section5-image" alt="Rings category">
+                        <div class="hidden"></div>
+                        <p class="p-regular p-category">Rings</p>
+                    </div>
+                </a>
+                <a class="pointer" style="text-decoration: none;" id="category3" href="">
+                    <div class="section5-image-container">
+                        <img src="photos/home-category-pendants.png" class="section5-image" alt="Pendants category">
+                        <div class="hidden"></div>
+                        <p class="p-regular p-category">Pendants</p>
+                    </div>
+                </a>
+                <a class="pointer" style="text-decoration: none;" id="category4" href="">
+                    <div class="section5-image-container" style="padding-top: 3rem;">
+                        <img src="photos/home-category-bracelets.png" class="section5-image" alt="Bracelets category">
+                        <div class="hidden"></div>
+                        <p class="p-regular p-category">Bracelets</p>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+
+        <section id="our_values_6-grid">
+            <div id="section6-img">
+                <img class="img-width" src="photos/home-section6.png" alt="">
+            </div>
+            <div id="section6-text">
+                <div id="section6-h2">
+                    <h2 class="h2-regular" style="text-align: left; padding-bottom: 2rem; padding-top: 0;">Our brand
+                    </h2>
+                </div>
+                <div id="section6-p">
+                    <p id="sect6-text-p" style="text-align: left; width: auto;" class="p-regular">Founded in Copenhagen,
+                        Atelier Michaud is crafted and nurtured by its owner, Pauline Michaud. All the jewellery is
+                        handcrafted with recycled high-quality silver and gold.<br><br>The brand’s aim is to create
+                        unique
+                        designs, drawn by organic and delicate shapes - a mix of sophistication and modern bohemian.
+                    </p>
+                </div>
+
+                <div id="section6-button">
+                    <a href="" class="button1 pointer" style="margin-bottom: 2rem; margin-top: 2vw;">Read more</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="get_inspired_7-grid">
+            <div id="section7-text">
+                <div id="section7-h2">
+                    <h2 class="h2-regular" style="padding-bottom: 0; padding-top: 0;">~ Get
+                        inspired ~</h2>
+                </div>
+                <div id="section7-p">
+                    <p id="sect6-text-p"
+                        style="width: auto; font-family: ivypresto-display, serif; font-size: 2rem; padding-bottom: 2rem;"
+                        class="p-regular">Share your photo with
+                        <span style="color: #B17458;">#lateliermichaud</span>
+                    </p>
+                </div>
+                <div>
+                    <img src="./images/home-section7-line.svg" alt="line" id="section7-line">
+                </div>
+            </div>
+            <div id="section7-images">
+                <img src="photos/section7-image1.png" class="section7-image" id="sect7-image1">
+                <img src="photos/section7-image2.png" class="section7-image">
+                <img src="photos/section7-image3.png" class="section7-image">
+                <img src="photos/section7-image4.png" class="section7-image">
+                <img src="photos/section7-image5.png" class="section7-image">
+                <img src="photos/section7-image6.png" class="section7-image" id="sect7-image6">
+
+            </div>
+        </section>
+
+
+
     </main>
 
     <footer>
     </footer>
 
+    <script src="./Home_page/home-section1.js"></script>
+    <script src="./Home_page/home-section2.js"></script>
+    <script src="./Home_page/home-section5.js"></script>
 </body>
 
-<script src="index.js"></script>
+
 
 </html>
