@@ -138,6 +138,7 @@
      #section4-button {
         grid-column: 2 / span 4;
         grid-row: 7/ span 1;
+        text-align-last: center;
      }
 
      #section4-img {
