@@ -20,7 +20,7 @@ html {
 }
 
 
-#our_values_4-grid {
+#ethical_design-section1-grid {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: 50px auto auto auto auto auto 70px;
@@ -135,10 +135,47 @@ html {
 }
 
 
+
+/*   Section 2   */
+
 #ethical_design-section2-grid {
     background-color: var(--color-background2);
-    height: 50vh
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 40px auto 40px;
+    grid-column-gap: 20px;
+    /* grid-row-gap: 5px; */
+
+    height: auto;
 }
+
+#section2-icon-container {
+    grid-column: 2 / span 2;
+    grid-row: 2/ span 1;
+    margin: auto;
+    padding-left: 5vw;
+    /* width: 15vw;
+    height: auto; */
+}
+
+#section2-icon {
+    height: auto;
+    width: 10vw;
+}
+
+#section2-text {
+    grid-column: 4 / span 6;
+    grid-row: 2/ span 1;
+    margin: auto;
+    /* width: 15vw;
+    height: auto; */
+}
+
+    
+
+
+
+
 
 
 
@@ -171,7 +208,7 @@ html {
 
 
  @media (max-width: 750px) {
-    #our_values_4-grid {
+    #ethical_design-section1-grid {
         display: grid;
         grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
         grid-template-rows: 50px auto auto auto auto auto auto 50px;
@@ -262,11 +299,49 @@ html {
         margin-top: 4rem;
         margin-bottom: 3rem;
     }
+
+
+/*   Section 2   */
+
+#ethical_design-section2-grid {
+    background-color: var(--color-background2);
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 40px auto auto 40px;
+    grid-column-gap: 20px;
+    /* grid-row-gap: 5px; */
+
+    height: auto;
+}
+
+#section2-icon-container {
+    grid-column: 2 / span 8;
+    grid-row: 2/ span 1;
+    margin: auto;
+    padding-left: 5vw;
+    /* width: 15vw;
+    height: auto; */
+}
+
+#section2-icon {
+    height: auto;
+    width: 125px;
+}
+
+#section2-text {
+    grid-column: 2 / span 8;
+    grid-row: 3/ span 1;
+    margin: auto;
+    /* width: 15vw;
+    height: auto; */
+}
+
+
  }
 
 
  @media (max-width: 600px) {
-    #our_values_4-grid {
+    #ethical_design-section1-grid {
         display: grid;
         grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
         grid-template-rows: 50px auto auto auto auto auto auto 50px;
@@ -331,4 +406,5 @@ html {
     .h3-regular {
         font-size: 3rem;
     }
+
  }
