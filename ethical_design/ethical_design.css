@@ -219,6 +219,44 @@ html {
     padding-right: 2vw;
 }
 
+/*   Section 4   */
+
+#ethical_design-section4-grid {
+    background-color: var(--color-background2);
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 50px auto 70px;
+    grid-column-gap: 20px;
+    /* grid-row-gap: 5px; */
+
+    height: auto;
+}
+
+#section4-image {
+    grid-column: 6 / span 4;
+    grid-row: 2/ span 1;
+    margin: auto;
+    /* padding-left: 5vw; */
+    /* width: 15vw;
+    height: auto; */
+}
+
+#sect4-img {
+    height: auto;
+    width: 35vw;
+}
+
+#section4-text {
+    grid-column: 2 / span 4;
+    grid-row: 2/ span 1;
+    padding-top: 2vw;
+    padding-left: 8vw;
+    padding-right: 2vw;
+}
+
+
+
+
 
 
 
@@ -436,6 +474,41 @@ html {
         padding-left: 0;
         padding-right: 0;
     }
+
+
+    /*   Section 4   */
+
+    #ethical_design-section4-grid {
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: 50px auto auto 70px;
+        grid-column-gap: 20px;
+        /* grid-row-gap: 5px; */
+
+        height: auto;
+    }
+
+    #section4-image {
+        grid-column: 2 / span 8;
+        grid-row: 2/ span 1;
+        margin: auto;
+        /* padding-left: 5vw; */
+        /* width: 15vw;
+        height: auto; */
+    }
+
+    #sect4-img {
+        height: auto;
+        width: 250px;
+    }
+
+    #section4-text {
+        grid-column: 2 / span 8;
+        grid-row: 3/ span 1;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 
  }
 
