@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" type="image/png" href="../images/logo-latelier_michaud.png"/>
+</head>
+<body>
+    
+
+    <div class="filter">
+        <form>
+          <p><b>Product Type</b></p>
+          <select class="productType">
+            <option>Earrings</option>
+            <option>Bracelets</option>
+            <option>Rings</option>
+            <option>Pendants</option>
+          </select>
+        </form>
+
+        <form>
+          <form>
+            <p><b>Collection</b></p>
+            <select class="collection">
+              <option>Aurore</option>
+              <option>Moringa</option>
+            </select>
+        </form>
+
+        <form>
+          <p><b>Sort By</b></p>
+          <select class="sortBy">
+            <option>Show all</option>
+            <option>Point and Shoot</option>
+            <option>SLR</option>
+            <option>TLR</option>
+            <option>Rangefinder</option>
+          </select>
+        </form>
+      </div>
+
+
+      <template id="productTemplate">
+        <article class="product">
+          <a class="photoAtag" href="camera-view.html?_id=602fb277b0bc995a00059a9">
+            <img class="productimg" src="https://web35mm-e688.restdb.io/media/60317f169fc7b60c00000fe8?s=w" alt="Camera" /></a>
+          <h3 class="productName">Coco Ring</h3>
+          <p class="price">1.300,00 kr</p>
+          <a class="readmoreAtag" href="camera-view.html?_id=602fb277b0bc995a00059a9">Read More</a>
+        </article>
+      </template>
+
+
+
+</body>
+
+<script src="all_product_data.js"></script>
+</html>
