@@ -333,6 +333,88 @@ li {
   padding: 1rem;
 }
 
+/*RECOMMENDATIONS*/
+
+#our_jewellery-grid {
+  display: flex;
+  flex-direction: row;
+  place-content: space-evenly;
+  /* padding-bottom: 2rem; */
+  margin-right: 10vw;
+  margin-left: 10vw;
+  height: 22vw;
+}
+
+.sect2-product_container {
+  width: 20vw;
+  max-height: 300px;
+  /* padding-right: 30px;
+  padding-left: 30px; */
+  /* background-color: white; */
+}
+
+.image-container-square {
+  width: 16vw;
+  height: 16vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.img-product {
+  width: 16vw;
+  height: 16vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circle-image-border {
+  width: 17vw;
+  height: 17vw;
+  border: 3px var(--color-button) solid;
+  position: absolute;
+  left: -0.5vw;
+  top: -0.5vw;
+  border-radius: 50%;
+  opacity: 60%;
+}
+
+.product-name {
+  font-family: Work Sans, sans-serif;
+  font-size: 1.8rem;
+  color: var(--main-text-color);
+  font-weight: 400;
+  line-height: 2.5rem;
+  padding-top: 3rem;
+
+  text-align: center;
+}
+
+.product-price {
+  font-family: Work Sans, sans-serif;
+  font-size: 1.8rem;
+  color: var(--main-text-color);
+  font-weight: 600;
+  line-height: 2.5rem;
+  padding-bottom: 2rem;
+  opacity: 0;
+
+  text-align: center;
+}
+
+.product-price-show {
+  font-family: Work Sans, sans-serif;
+  font-size: 1.8rem;
+  color: var(--main-text-color);
+  font-weight: 600;
+  line-height: 2.5rem;
+  padding-bottom: 2rem;
+  opacity: 100;
+
+  text-align: center;
+}
+
 @media only screen and (min-width: 360px) and (max-width: 500px) {
   .productDetails,
   .productDescription {
