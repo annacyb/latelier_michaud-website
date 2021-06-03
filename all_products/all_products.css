@@ -21,3 +21,14 @@ body {
     box-sizing: border-box;
     margin: 0;
   }
+
+
+  .productimg{
+    width: 100%;
+  }
+
+  #product_list{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto;
+  }
