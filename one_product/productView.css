@@ -335,19 +335,23 @@ li {
 
 /*RECOMMENDATIONS*/
 
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
 #our_jewellery-grid {
   display: flex;
   flex-direction: row;
   place-content: space-evenly;
   /* padding-bottom: 2rem; */
-  margin-right: 10vw;
-  margin-left: 10vw;
-  height: 22vw;
+  margin: 2rem 10rem;
 }
 
 .sect2-product_container {
-  width: 20vw;
-  max-height: 300px;
+  display: flex;
+  flex-direction: column;
   /* padding-right: 30px;
   padding-left: 30px; */
   /* background-color: white; */
@@ -382,7 +386,7 @@ li {
 
 .product-name {
   font-family: Work Sans, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: var(--main-text-color);
   font-weight: 400;
   line-height: 2.5rem;
@@ -393,7 +397,7 @@ li {
 
 .product-price {
   font-family: Work Sans, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: var(--main-text-color);
   font-weight: 600;
   line-height: 2.5rem;
@@ -405,7 +409,7 @@ li {
 
 .product-price-show {
   font-family: Work Sans, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   color: var(--main-text-color);
   font-weight: 600;
   line-height: 2.5rem;
@@ -413,6 +417,14 @@ li {
   opacity: 100;
 
   text-align: center;
+}
+.recommendations h1 {
+  text-align: center;
+  color: var(--main-text-color);
+  font-family: var(--font-1);
+  font-weight: 300;
+  font-size: 3rem;
+  margin: 1rem 0;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 500px) {
@@ -433,6 +445,16 @@ li {
     margin-left: 2rem;
   }
 
+  .dropdown > .dropdownList:hover .list {
+    /* transform: scaleY(1); */
+    height: 200px;
+    width: 300px;
+  }
+  .dropdown > .dropdownList:hover .list2 {
+    /* transform: scaleY(1); */
+    height: 150px;
+    width: 300px;
+  }
   .productDescription {
     padding-top: 1rem;
   }
@@ -499,6 +521,58 @@ li {
   }
   .mySlides img {
     align-self: center;
+  }
+
+  .sect2-product_container {
+    min-width: 8rem;
+    max-width: 20rem;
+  }
+
+  #our_jewellery-grid {
+    margin: 0.5rem 2rem;
+  }
+
+  .image-container-square {
+    width: 24vw;
+    height: 24vw;
+  }
+
+  .img-product {
+    width: 24vw;
+    height: 24vw;
+  }
+
+  .circle-image-border {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .product-name {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .product-price {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    opacity: 0;
+    text-align: center;
+  }
+
+  .product-price-show {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+    opacity: 100;
+    text-align: center;
+  }
+
+  .recommendations h1 {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
   }
 }
 

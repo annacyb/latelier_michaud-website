@@ -1,4 +1,4 @@
-const url1 = "https://kea21s-9328.restdb.io/rest/products?=max3";
+const url1 = "https://kea21s-9328.restdb.io/rest/products?max=3";
 
 /*API key*/
 const options1 = {
