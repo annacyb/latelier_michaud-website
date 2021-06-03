@@ -104,7 +104,7 @@ function showProduct(data, url) {
      //change content
  
      myCopy.querySelector("p.product-name").textContent = data.name
-     myCopy.querySelector("p.product-name").alt = data.name
+     myCopy.querySelector("p.product-name").alt = data.name + " image"
      myCopy.querySelector("p.price").textContent = data.price + " DKK"
      myCopy.querySelector("img.img-product").src = data.photoOne
     
