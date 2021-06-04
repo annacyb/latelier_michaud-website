@@ -127,6 +127,21 @@ body {
   text-transform: none;
 }
 
+.quantityInput {
+  width: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  text-align: center;
+}
+
 .bagproductPrice {
   align-self: flex-end;
   font-family: var(--font-2);
@@ -374,6 +389,10 @@ a {
 .similarSlider .similar {
   padding-top: 2rem;
   color: var(--main-text-color);
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 @media only screen and (max-width: 950px) {
