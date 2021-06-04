@@ -9,31 +9,29 @@ const options = {
 
 fetch(url, {
   method: "GET",
-  headers: { 
+  headers: {
     "x-apikey": "602e2b3b5ad3610fb5bb6298",
   },
 })
   .then((res) => res.json())
   .then((response) => {
-      
     showProducts(response);
   })
   .catch((err) => {
     console.error(err);
   });
 
-
-
 function showProducts(products) {
-  console.log(products);
   const template = document.querySelector(".productTemplate").content;
 
-  const copy = template.cloneNode(true);
+  for (const product of products) {
+    const copy = template.cloneNode(true);
 
-  copy.querySelector("h1.productName").textContent = products.name;
-  copy.querySelector("img.productimg").src = products.photoOne;
-  copy.querySelector("p.price").textContent = `${products.price} DKK`;
+    copy.querySelector("h1.productName").textContent = product.name;
+    copy.querySelector("img.productimg").src = product.photoOne;
+    copy.querySelector("p.price").textContent = `${product.price} DKK`;
 
-  const parent = document.querySelector("#product_list");
-  parent.appendChild(copy);
+    const parent = document.querySelector("#product_list");
+    parent.appendChild(copy);
+  }
 }
