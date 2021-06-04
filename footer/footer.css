@@ -27,6 +27,11 @@ body {
   color: var(--main-text-color);
 }
 
+footer {
+  font-family: ivypresto-display, serif;
+  margin-top: 8rem;
+}
+
 .mockupDiv {
   height: 100px;
 }
@@ -46,6 +51,7 @@ body {
 
 .betheFirst {
   font-size: 20px;
+  color: white;
 }
 
 .betheFirst span {
@@ -65,6 +71,7 @@ body {
 .keep {
   font-size: 70px;
   margin-top: -1.5rem;
+  color: white;
 }
 
 .newsletterForm {
