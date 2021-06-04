@@ -31,8 +31,9 @@
         <form>
           <p><b>Product Type</b></p>
           <select class="productType">
+            <option>Show all</option>
             <option>Earrings</option>
-            <option>Bracelets</option>
+            <option>Bracelet</option>
             <option>Rings</option>
             <option>Pendants</option>
           </select>
@@ -42,6 +43,7 @@
           <form>
             <p><b>Collection</b></p>
             <select class="collection">
+              <option>Show all</option>
               <option>Aurore</option>
               <option>Moringa</option>
             </select>
@@ -61,17 +63,16 @@
       </div>
 
 
-<div id="product_list">
-      <template class="productTemplate">
-        <article class="products">
-            <img class="productimg" src="https://raw.githubusercontent.com/annacyb/latelier_michaud-website/master/photos/petite-chloe-earrings-silver-1.png" alt="product" />
-            <h1 class="productName">Coco Ring</h1>
-            <p class="price">1.300,00 kr</p>
-            </article>
-      </template>
-    </div>
-  
+  <template class="productTemplate">
+    <article class="products">
+    <img class="productimg" src="https://raw.githubusercontent.com/annacyb/latelier_michaud-website/master/photos/petite-chloe-earrings-silver-1.png" alt="product" />
+    <h1 class="productName">Coco Ring</h1>
+    <p class="price">1.300,00 kr</p>
+    </article>
+  </template>
 
-      <script src="all_product_data.js"></script>
+  <div id="product_list"></div>
+  
+  <script src="all_product_data.js"></script>
 </body>
 </html>
