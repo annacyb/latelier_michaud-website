@@ -26,13 +26,13 @@ fetch(url, {
 
 function showProducts(products) {
   console.log(products);
-  const template = document.querySelector("#productTemplate").content;
+  const template = document.querySelector(".productTemplate").content;
 
   const copy = template.cloneNode(true);
 
-  copy.querySelector(".productName").textContent = products.name;
-  copy.querySelector(".productimg").src = products.photoOne;
-  copy.querySelector(".price").textContent = `${products.price} DKK`;
+  copy.querySelector("h1.productName").textContent = products.name;
+  copy.querySelector("img.productimg").src = products.photoOne;
+  copy.querySelector("p.price").textContent = `${products.price} DKK`;
 
   const parent = document.querySelector("#product_list");
   parent.appendChild(copy);
