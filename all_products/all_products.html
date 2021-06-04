@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>L'atelier Michaud</title>
     <link rel="stylesheet" href="../style.css"/>
     <link rel="stylesheet" href="all_products.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/mmu7xfx.css" />
     <link rel="shortcut icon" type="image/png" href="../images/logo-latelier_michaud.png"/>
 </head>
 <body>
+
+
+    <div id="header">
+        <img src="../images/all_product_line@2x.png" alt="line">
+        <h1>All Products</h1>
+    </div>
+
+    <div class="material"> 
+      <p>All</p>
+      <p>|</p>
+      <p>Gold</p>
+      <p>|</p>
+      <p>Silver</p>
+    </div>
     
 
-    <div class="filter">
+    <div id="filter">
         <form>
           <p><b>Product Type</b></p>
           <select class="productType">
@@ -31,6 +46,7 @@
               <option>Moringa</option>
             </select>
         </form>
+       
 
         <form>
           <p><b>Sort By</b></p>
@@ -44,13 +60,13 @@
         </form>
       </div>
 
+
 <div id="product_list">
       <template id="productTemplate">
-        <article class="product">
-          <a class="photoAtag" href="camera-view.html?_id=602fb277b0bc995a00059a9">
-            <img class="productimg" src="https://raw.githubusercontent.com/annacyb/latelier_michaud-website/master/photos/petite-chloe-earrings-silver-1.png" alt="Camera" /></a>
-          <h1 class="productName">Coco Ring</h3>
-          <p class="price">1.300,00 kr</p>
+        <article class="products">
+            <img class="img.productimg" src="https://raw.githubusercontent.com/annacyb/latelier_michaud-website/master/photos/petite-chloe-earrings-silver-1.png" alt="product" /></a>
+          <h1 class="h1.productName">Coco Ring</h3>
+          <p class="p.price">1.300,00 kr</p>
         </article>
       </template>
     </div>
