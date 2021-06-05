@@ -87,8 +87,20 @@ function handleSelectSortBy(evt) {
   } else {
     url = `https://kea21s-9328.restdb.io/rest/products?&q={"type":"${evt.target.value}"}`;
   }
+
+  debugger;
   getData();
 }
 
+function getMaterial(evt) {
+  // filter by material
+  var material = evt.target.textContent;
+
+  if (material == "All") url = `https://kea21s-9328.restdb.io/rest/products?`;
+  else
+    url = `https://kea21s-9328.restdb.io/rest/products?&q={"material":"${material}"}`;
+
+  getData();
+}
 
 getData();
