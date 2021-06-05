@@ -38,6 +38,9 @@ function showProducts(products) {
     copy.querySelector("h1.productName").textContent = product.name;
     copy.querySelector("img.productimg").src = product.photoOne;
     copy.querySelector("p.price").textContent = `${product.price} DKK`;
+    copy.querySelector(
+      "#productLink"
+    ).href = `../one_product/one_product.html?id=${product._id}`;
 
     parent.appendChild(copy);
   }
@@ -89,6 +92,5 @@ function handleSelectSortBy(evt) {
   }
   getData();
 }
-
 
 getData();
