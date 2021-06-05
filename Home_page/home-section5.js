@@ -1,7 +1,6 @@
 
 function unhover_category(category) {
     let hover_element = category.children[0].children[1]
-    console.log(hover_element)
     hover_element.classList.remove("category-hover-item")
     hover_element.classList.add("hidden")
    
@@ -11,7 +10,6 @@ function unhover_category(category) {
 
 function hover_category(category) {
     let hover_element = category.children[0].children[1]
-    console.log(hover_element)
     hover_element.classList.remove("hidden")
     hover_element.classList.add("category-hover-item")
 
@@ -21,7 +19,6 @@ function hover_category(category) {
 
 function mobile_add_hover_element(category) {
     let hover_element = category.children[0].children[1]
-    console.log(hover_element)
     hover_element.classList.remove("hidden")
     hover_element.classList.add("category-hover-item")
 }

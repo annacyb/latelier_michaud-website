@@ -109,7 +109,7 @@ function showProduct(data, url) {
      myCopy.querySelector("img.img-product").src = data.photoOne
     
  
-     myCopy.querySelector("#productlistLink").href = `../product-view.html?id=${data._id}`;
+     myCopy.querySelector("#productlistLink").href = `../one_product/one_product.html?id=${data._id}`;
          
  
      //grab parent
