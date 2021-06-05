@@ -4,8 +4,7 @@ body {
   background-color: #faf5f1;
   margin: 0;
   font-family: var(--font-1);
-}4
-
+}
 :root {
   --color-1: #faf5f1;
   --color-2: #f5e8d6;
@@ -100,6 +99,13 @@ body {
   margin-bottom: 9%;
 }
 
+#productLink,
+#productLink:visited,
+#productLink:active,
+#productLink:hover {
+  text-decoration: none;
+}
+
 .products h1,
 .products p {
   font-family: var(--font-2);
@@ -118,7 +124,6 @@ body {
   font-size: 1rem;
 }
 
-
 /*TABLET VIEW*/
 @media only screen and (max-width: 1000px) {
   #product_list {
@@ -126,30 +131,26 @@ body {
   }
 }
 
-
 @media only screen and (max-width: 500px) {
   #product_list {
     grid-template-columns: 90%;
   }
 }
 
-
-
 @media only screen and (max-width: 376px) {
-  
-#header h1 {
-  font-size: 3.3rem;
-  margin-right: 15%;
-}
+  #header h1 {
+    font-size: 3.3rem;
+    margin-right: 15%;
+  }
 
-#filter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 10.5%;
-}
+  #filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10.5%;
+  }
 
-.material {
-  margin-top: 25%;
-}
+  .material {
+    margin-top: 25%;
+  }
 }

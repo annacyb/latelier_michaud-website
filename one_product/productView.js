@@ -1,10 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
-const url =
-  "https://kea21s-9328.restdb.io/rest/products/60b2349860d0d67b00020dc7";
-
-// const url = "https://kea21s-9328.restdb.io/rest/products/" + id;
-// const mediaurl = "https://kea2021-907c.restdb.io/media/";
+const url = "https://kea21s-9328.restdb.io/rest/products/" + id;
 
 /*API key*/
 
