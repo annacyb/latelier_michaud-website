@@ -30,33 +30,34 @@ body {
 }
 
 #header h1 {
-  font-family: var(--font-1);
+  font-family: ivypresto-display, serif;
   color: var(--main-text-color);
-  font-size: 2.8rem;
-  float:right;
+  font-weight: 100;
+  font-size: 3.3rem;
+  float: right;
   margin-right: 5%;
 }
 
-#filter{
+#filter {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 3.5%;
   font-family: var(--font-2);
-  color:var(--main-text-color);
+  color: var(--main-text-color);
 }
 
-#filter form p b{
+#filter form p b {
   font-weight: 400;
 }
 
-#filter form{
+#filter form {
   display: flex;
 }
 
 #filter form .productType,
 #filter form .collection,
-#filter form .sortBy{
+#filter form .sortBy {
   height: 19px;
   width: 20px;
   border-radius: 3%;
@@ -66,22 +67,22 @@ body {
   font-family: var(--font-2);
 }
 
-.material{
-  display:flex;
-  margin-top:10%;
+.material {
+  display: flex;
+  margin-top: 10%;
   justify-content: center;
 }
 
-.material p{
-  margin-right:2%;
-  margin-left:2%;
+.material p {
+  margin-right: 2%;
+  margin-left: 2%;
   font-family: var(--font-2);
-  color:var(--main-text-color)
+  color: var(--main-text-color);
 }
 
-
 .productimg {
-  width:80%;
+  width: 80%;
+  height: 450px;
 }
 
 #product_list {
@@ -92,9 +93,63 @@ body {
   grid-template-rows: auto;
 }
 
-.products{
+.products {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 9%;
+}
+
+.products h1,
+.products p {
+  font-family: var(--font-2);
+  color: var(--main-text-color);
+}
+
+.products h1 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.4rem;
+}
+
+.products p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+/*TABLET VIEW*/
+@media only screen and (max-width: 1000px) {
+  #product_list {
+    grid-template-columns: 45% 45%;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  #product_list {
+    grid-template-columns: 90%;
+  }
+}
+
+
+
+@media only screen and (max-width: 376px) {
+  
+#header h1 {
+  font-size: 3.3rem;
+  margin-right: 15%;
+}
+
+#filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10.5%;
+}
+
+.material {
+  margin-top: 25%;
+}
 }
