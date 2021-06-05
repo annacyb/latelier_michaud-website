@@ -1,0 +1,582 @@
+@import url("https://use.typekit.net/wib3msp.css");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-button: #c58b71;
+  --color-font: #b17458;
+  --color-shape1: #8c9e6b;
+  --color-shape2: #f3decf;
+  --color-shape3: #f3cf90;
+  --color-background: #faf5f1;
+  --color-background2: #f5e8d6;
+
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  --font-1: ivypresto-display, serif;
+  --font-2: "Work Sans", sans-serif;
+  --main-text-color: #3f4c5a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.aboutUs h1 {
+  text-align: center;
+  color: var(--color-font);
+  font-family: var(--font-1);
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.section {
+  margin: 0 15rem;
+}
+
+.section {
+  display: flex;
+}
+
+/*SECTION ONE*/
+
+.introImage {
+  padding-right: 2rem;
+}
+.secOne {
+  padding-top: 3rem;
+}
+.artOne {
+  display: flex;
+  flex-direction: column;
+}
+.artOne h2 {
+  color: var(--color-font);
+  font-family: var(--font-1);
+  font-weight: 300;
+  font-size: 2.8rem;
+}
+.intro {
+  padding: 0;
+  margin: 0;
+  width: 30rem;
+  color: var(--main-text-color);
+  font-family: var(--font-2);
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+/*SECTION ONEV2*/
+.values {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-right: 0rem;
+}
+
+.value {
+  display: flex;
+  flex-direction: row;
+}
+
+.value h3 {
+  font-family: var(--font-1);
+  font-weight: 200;
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  align-self: center;
+}
+.icon {
+  margin: 1rem;
+  width: 3rem;
+  height: auto;
+}
+
+.imageHolder {
+  width: 100rem;
+  height: auto;
+}
+
+.imageHolderTwo {
+  width: 35rem;
+  height: auto;
+}
+
+.imageHolder img {
+  max-width: 100%;
+  height: auto;
+}
+
+.secOne2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collageImage {
+  width: 100%;
+}
+
+/*SECTION TWO*/
+.secTwo {
+  background-color: var(--color-background2);
+  flex-direction: column;
+  margin: 0;
+}
+.believe {
+  text-align: start;
+  margin-left: 18%;
+}
+
+.create {
+  text-align: end;
+  margin-right: 20%;
+}
+
+.stand {
+  text-align: start;
+  margin-left: 18%;
+}
+.secTwo h2 {
+  font-style: italic;
+  font-size: 3rem;
+  color: var(--color-font);
+  font-family: var(--font-1);
+  font-weight: 300;
+}
+
+.secTwo p {
+  font-family: var(--font-2);
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/*SECTION THREE*/
+.secThree,
+.secThree2,
+.secFour {
+  flex-direction: column;
+}
+
+.about,
+.secFour2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.about {
+  justify-content: space-around;
+}
+
+.about p {
+  align-self: center;
+  width: 30rem;
+}
+
+.imageHolderShape {
+  width: 15rem;
+  height: auto;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.imageHolderShape img {
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+.secTwo,
+.secThree {
+  padding: 3rem 0;
+}
+
+.beginning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imageHolder3 {
+  width: 40rem;
+  height: 20rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.imageHolder4 {
+  width: 30rem;
+  height: auto;
+  margin: 0 5rem;
+}
+
+.beginning img:nth-child(1) {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.imageHolder3 img {
+  max-width: 50%;
+  height: auto;
+  margin-top: 7rem;
+}
+
+.pres,
+.about p {
+  font-family: var(--font-2);
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
+
+.pres {
+  /* margin-left: 4rem; */
+  width: 25rem;
+}
+
+.secFour {
+  background-color: var(--color-background2);
+  margin: 0;
+  padding: 3rem 15rem;
+}
+
+.secFour2 {
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+
+.present {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.present img:nth-child(1),
+.present img:nth-child(2) {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.fade-in {
+  animation: fade-in 1s ease-in-out both;
+}
+.hide {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .section {
+    margin: 0;
+  }
+
+  .secOne {
+    padding-top: 1rem;
+  }
+  .secOne,
+  .secOne2,
+  .beginning,
+  .about,
+  .secFour,
+  .secFour2,
+  .present {
+    flex-direction: column;
+  }
+
+  .secFour {
+    margin: 0;
+    padding: 0;
+  }
+
+  .imageHolderShape {
+    width: 10rem;
+    height: auto;
+    align-self: center;
+  }
+
+  .artOne {
+    justify-content: center;
+  }
+
+  .artOne h2 {
+    text-align: center;
+  }
+  .imageHolder,
+  .imageHolderTwo,
+  .imageHolder3,
+  .imageHolder4 {
+    width: 20rem;
+    height: auto;
+    align-self: center;
+  }
+
+  .introImage {
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro {
+    font-size: 1rem;
+    width: 20rem;
+    align-self: center;
+  }
+
+  .value h3 {
+    font-family: var(--font-1);
+    font-weight: 200;
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+    align-self: center;
+  }
+  .icon {
+    margin: 1rem;
+    width: 2rem;
+    height: auto;
+  }
+  .believe,
+  .create,
+  .stand {
+    margin: 0;
+    text-align: center;
+    padding: 1rem;
+  }
+  .secTwo h2 {
+    font-size: 2rem;
+  }
+
+  .secTwo p {
+    font-size: 1rem;
+  }
+  .secTwo {
+    padding: 1rem;
+  }
+
+  .secThree,
+  .secThree2 {
+    padding: 0;
+  }
+  .secThree2 p {
+    padding-top: 0;
+    width: 20rem;
+    font-size: 1rem;
+  }
+
+  .secThree2 p:nth-child(2) {
+    padding-bottom: 2rem;
+  }
+  .pres {
+    margin: 0;
+    padding: 0;
+    width: 20rem;
+    justify-content: center;
+  }
+  .hidden {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+
+  .beginning h2 {
+    color: var(--color-font);
+    font-family: var(--font-1);
+    font-weight: 300;
+    font-size: 1.8rem;
+  }
+
+  .imageHolder3 img {
+    margin-top: 0;
+  }
+
+  .secFour2 {
+    margin-top: 0;
+  }
+
+  .pres {
+    align-self: center;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .secOne,
+  .secOne2,
+  .beginning,
+  .about,
+  .secFour,
+  .secFour2,
+  .present {
+    flex-direction: column;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hide {
+    display: block;
+  }
+  .section {
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+  }
+  .imageHolder,
+  .imageHolderTwo,
+  .imageHolder3 {
+    width: 25rem;
+  }
+  .imageHolder3,
+  .imageHolder4 {
+    width: 25rem;
+    height: auto;
+  }
+
+  .imageHolder,
+  .imageHolderTwo,
+  .imageHolder3,
+  .imageHolder4 {
+    width: 20rem;
+    height: auto;
+    align-self: center;
+  }
+  .introImage {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+  }
+
+  .secOne2 {
+    justify-content: center;
+  }
+  .artOne {
+    justify-content: center;
+  }
+
+  .artOne h2 {
+    text-align: center;
+  }
+
+  .artOne p {
+    font-size: 1.2rem;
+    width: 30rem;
+    align-self: center;
+  }
+
+  .value h3 {
+    font-size: 1.2rem;
+  }
+  .icon {
+    margin: 1rem;
+    width: 3rem;
+    height: auto;
+  }
+
+  .beginning h2 {
+    font-size: 2.5rem;
+    color: var(--color-font);
+  }
+
+  .imageHolderShape {
+    width: 10rem;
+    height: auto;
+    align-self: center;
+  }
+
+  .about p,
+  .pres {
+    font-size: 1.2rem;
+    width: 30rem;
+  }
+
+  .imageHolder3 img {
+    margin-top: 0;
+  }
+
+  .secFour2 {
+    margin-top: 0;
+  }
+
+  .pres {
+    align-self: center;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1100px) {
+  .section {
+    margin: 0 3rem;
+  }
+  .value h3 {
+    font-size: 1.1rem;
+  }
+  .icon {
+    margin: 1rem;
+    width: 2.5rem;
+    height: auto;
+  }
+  .imageHolderTwo {
+    width: 25rem;
+  }
+
+  .secTwo {
+    padding: 3rem 0;
+    margin: 0;
+  }
+
+  .believe,
+  .create,
+  .stand {
+    margin: 0 3rem;
+  }
+
+  .imageHolderShape {
+    width: 10rem;
+  }
+
+  .secFour {
+    margin: 0;
+    padding: 2rem 0;
+  }
+  .imageHolder4,
+  .imageHolder3 {
+    width: 150rem;
+  }
+
+  .pres,
+  .about p,
+  .intro {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1300px) {
+  .section {
+    margin: 0 5rem;
+  }
+  .secFour {
+    margin: 0;
+    padding: 2rem 5rem;
+  }
+  .pres,
+  .about p,
+  .intro {
+    font-size: 1.1rem;
+  }
+}
