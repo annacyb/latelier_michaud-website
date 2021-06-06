@@ -32,7 +32,7 @@ function handleProducts(product) {
   document.querySelector(".first").src = product.photoOne;
   document.querySelector(".second").src = product.photoTwo;
   document.querySelector(".third").src = product.photoThree;
-  document.querySelector(".description li").textContent = product.description;
+  document.querySelector(".dropdown p").textContent = product.description;
 
   if (product.materialType) {
     document.querySelector(".material h3:nth-child(1)").classList.add("cross");
