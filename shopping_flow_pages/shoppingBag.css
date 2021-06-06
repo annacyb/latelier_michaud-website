@@ -101,13 +101,15 @@ body {
 }
 
 .bagproductImg {
-  width: 140px;
-  height: 140px;
+  width: 180px;
+  height: 180px;
 }
 
 .bagproductImg img {
-  max-width: 100%;
+  width: 180px;
+  height: 180px;
   border-radius: 200px;
+  margin-left: 2rem;
 }
 
 .bagproductInfo {
@@ -433,6 +435,10 @@ a {
     gap: 2rem;
   }
 
+  .bagproductImg img {
+    margin-left: 0rem;
+  }
+
   .outsideCircle {
     width: 180px;
     height: 180px;
@@ -440,6 +446,10 @@ a {
 
   .suggestionText {
     margin-left: 1.5rem;
+  }
+
+  .suggestionText .p {
+    font-size: 1rem;
   }
 }
 
