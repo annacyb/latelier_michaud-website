@@ -1,179 +1,177 @@
 #our_jewellery_2-grid {
-  height: auto;
-  background-color: var(--color-background2);
+    height: auto;
+    background-color: var(--color-background2);
 }
 
 .h2-regular {
-  font-family: ivypresto-display, serif;
-  font-size: 3.7rem;
-  font-weight: 400;
-  color: var(--main-text-color);
-  line-height: 4.5rem;
-  text-align: center;
+    font-family: ivypresto-display, serif;
+    font-size: 3.7rem;
+    font-weight: 400;
+    color: var(--main-text-color);
+    line-height: 4.5rem;
+    text-align: center;
 
-  padding-top: 4.5rem;
-  padding-bottom: 3rem;
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
 }
 
 .h3-regular {
-  font-size: 2.3rem;
-  font-weight: 300;
-  color: var(--main-text-color);
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: var(--main-text-color);
 }
 
 a#productlistLink {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #filter_products {
-  display: flex;
-  flex-direction: row;
-  place-content: space-evenly;
-  width: 30vw;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    place-content: space-evenly;
+    width: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 4rem;
 }
 
-.selected_filter {
-  font-weight: 600;
-  border-bottom: 2px solid var(--color-button);
+.selected_filter{
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-button);
 }
+
 
 #our_jewellery-grid {
-  display: flex;
-  flex-direction: row;
-  place-content: space-evenly;
-  /* padding-bottom: 2rem; */
-  margin-right: 10vw;
-  margin-left: 10vw;
-  height: 22vw;
+    display: flex;
+    flex-direction: row;
+    place-content: space-evenly;
+    /* padding-bottom: 2rem; */
+    margin-right: 10vw;
+    margin-left: 10vw;
+    height: 22vw;
 }
 
 .circle-image-border {
-  width: 17vw;
-  height: 17vw;
-  border: 3px #edd3c0 solid;
-  position: absolute;
-  left: -0.5vw;
-  top: -0.5vw;
-  border-radius: 50%;
-  opacity: 60%;
-  transition: 1s ease;
-}
-
-.circle-image-border:hover {
-  border: solid 3px #b17458;
-  transition: 1s ease;
+    width: 17vw;
+    height: 17vw;
+    border: 3px var(--color-button) solid;
+    position: absolute;
+    left: -0.5vw;
+    top: -0.5vw;
+    border-radius: 50%;
+    opacity: 60%;
 }
 
 .sect2-product_container {
-  width: 20vw;
-  max-height: 300px;
-  /* padding-right: 30px;
+    width: 20vw;
+    max-height: 300px;
+    /* padding-right: 30px;
     padding-left: 30px; */
-  /* background-color: white; */
+    /* background-color: white; */
 }
 
 .image-container-square {
-  width: 16vw;
-  height: 16vw;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 1rem;
-  position: relative;
+    width: 16vw;
+    height: 16vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    position: relative;
 }
 
 .img-product {
-  width: 16vw;
-  height: 16vw;
-  border-radius: 50%;
-  object-fit: cover;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .product-name {
-  font-family: Work Sans, sans-serif;
-  font-size: 1.8rem;
-  color: var(--main-text-color);
-  font-weight: 400;
-  line-height: 2.5rem;
-  padding-top: 3rem;
+    font-family: Work Sans, sans-serif;
+    font-size: 1.8rem;
+    color: var(--main-text-color);
+    font-weight: 400;
+    line-height: 2.5rem;
+    padding-top: 3rem;
 
-  text-align: center;
+    text-align: center;
 }
 
 .product-price {
-  font-family: Work Sans, sans-serif;
-  font-size: 1.8rem;
-  color: var(--main-text-color);
-  font-weight: 600;
-  line-height: 2.5rem;
-  padding-bottom: 2rem;
-  opacity: 0;
+    font-family: Work Sans, sans-serif;
+    font-size: 1.8rem;
+    color: var(--main-text-color);
+    font-weight: 600;
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
+    opacity: 0;
 
-  text-align: center;
+    text-align: center;
 }
 
 .product-price-show {
-  font-family: Work Sans, sans-serif;
-  font-size: 1.8rem;
-  color: var(--main-text-color);
-  font-weight: 600;
-  line-height: 2.5rem;
-  padding-bottom: 2rem;
-  opacity: 100;
+    font-family: Work Sans, sans-serif;
+    font-size: 1.8rem;
+    color: var(--main-text-color);
+    font-weight: 600;
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
+    opacity: 100;
 
-  text-align: center;
+    text-align: center;
 }
 
+
 @media (max-width: 750px) {
-  #our_jewellery-grid {
-    display: flex;
-    flex-direction: row;
-    place-content: flex-start;
 
-    overflow-x: auto;
+    #our_jewellery-grid {
+        display: flex;
+        flex-direction: row;
+        place-content: flex-start;
 
-    margin-right: 0;
-    margin-left: 0;
+        overflow-x: auto;
 
-    height: auto;
-  }
+        margin-right: 0;
+        margin-left: 0;
 
-  .sect2-product_container {
-    width: 33rem;
+        height: auto;
+    }
+
+    .sect2-product_container {
+        width: 33rem;
     max-height: 400px;
-  }
+    }
 
-  .image-container-square {
-    width: 160px;
-    height: 160px;
-  }
+    .image-container-square {
+        width: 160px;
+        height: 160px;
+    }
 
-  .img-product {
-    width: 150px;
-    height: 150px;
-  }
+    .img-product {
+        width: 150px;
+        height: 150px;
+    }
 
-  .circle-image-border {
-    width: 165px;
-    height: 165px;
-    left: -8px;
-    top: -7px;
-  }
+    .circle-image-border {
+        width: 165px;
+        height: 165px;
+        left: -8px;
+        top: -7px;
+    }
 
-  .product-name {
-    font-size: 2.2rem;
-    line-height: 2.7rem;
-    padding-top: 2rem;
-  }
+    .product-name {
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        padding-top: 2rem;
+    }
 
-  .product-price-show {
-    font-size: 2.2rem;
-    line-height: 2.7rem;
-    padding-top: 1rem;
-  }
-  #filter_products {
-    width: 80vw;
-  }
+    .product-price-show {
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        padding-top: 1rem;
+    }
+    #filter_products {
+        width: 80vw;
+    }
+
 }
