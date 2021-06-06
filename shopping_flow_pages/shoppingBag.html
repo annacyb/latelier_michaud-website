@@ -279,9 +279,7 @@
       <template id="cartTemplate">
         <div class="orderItem">
           <div class="bagproductImg">
-            <img
-              src="https://anasofich.github.io/SILFEN-website/photos/bibbi-nylon-blue.jpg"
-            />
+            <img src="" />
           </div>
           <div class="bagproductInfo">
             <label for="fid-"><h3 class="bagName"></h3></label>
@@ -289,9 +287,18 @@
             <p>Material: <span class="bagColor"></span></p>
             <p>
               Quantity:
-              <span class="bagQuantity"
-                ><input name="NAME-" type="number" id="fid-" min="0" max="20"
-              /></span>
+              <span class="bagQuantity">
+                <button class="minus" type="button">-</button>
+                <input
+                  name="NAME-"
+                  type="number"
+                  id="fid-"
+                  min="0"
+                  max="20"
+                  class="quantityInput"
+                />
+                <button class="plus" type="button">+</button>
+              </span>
             </p>
             <p class="bagproductPrice"></p>
             <div class="lineS"></div>
