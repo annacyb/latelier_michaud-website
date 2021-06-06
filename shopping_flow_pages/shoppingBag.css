@@ -246,10 +246,19 @@ body {
   color: var(--color-font);
 }
 
+h2.similar {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
 .shoppingBag {
   font-size: 1.2rem;
   margin: 2rem 0 0 0.4rem;
   color: var(--color-font);
+}
+
+.similarSlider h1 {
+  margin-bottom: 2rem;
 }
 
 .subtotalFinal {
@@ -265,8 +274,19 @@ body {
   margin-bottom: 5%;
 }
 
+#suggestions::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#suggestions {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .bagOne {
   width: 10em;
+  font-family: var(--font-2);
 }
 
 #suggestions .bagOne {
@@ -310,14 +330,15 @@ body {
   margin-top: 1rem;
   font-style: var(--font-2);
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
-.price {
+.suggestionText .price {
   font-size: 1rem;
   text-align: center;
-  font-weight: 200;
+  font-weight: 600;
   margin: 0;
+  margin-top: -1.5rem;
 }
 
 .proceed {

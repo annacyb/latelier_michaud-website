@@ -90,8 +90,7 @@ nav .wrapper {
   display: inline-block;
   position: relative;
   font-size: 1.1rem;
-  font-style: italic;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 .mainMenuA:after {
