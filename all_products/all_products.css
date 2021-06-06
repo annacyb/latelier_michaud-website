@@ -108,6 +108,13 @@ body {
   margin-bottom: 9%;
 }
 
+.products img:hover{
+  opacity: 60%;
+  /* -webkit-box-shadow: 0px 1px 15px 5px rgba(184,121,94,0.21); 
+box-shadow: 0px 1px 15px 5px rgba(184,121,94,0.21); */
+transform: scale(1.02);
+}
+
 #productLink,
 #productLink:visited,
 #productLink:active,
