@@ -218,7 +218,8 @@ select {
   color: #f2d5e8;
 }
 
-.dropdownList {
+.dropdownList,
+.dropdown h2 {
   list-style-type: none;
   font-family: ivypresto-display, serif;
   margin: 0;
@@ -227,15 +228,34 @@ select {
   font-weight: 200;
   color: var(--main-text-color);
 }
-.list li,
-.list2 li {
+
+.dropdown p {
+  padding-bottom: 1rem;
+}
+
+/* .dropdown h2 {
+  font-family: ivypresto-display, serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--main-text-color);
+}
+
+.dropdown p {
   font-size: 1rem;
   font-family: var(--font-2);
   color: var(--main-text-color);
-  font-weight: 200;
+  font-weight: 300;
+} */
+.list li,
+.dropdown p {
+  font-size: 1rem;
+  font-family: var(--font-2);
+  color: var(--main-text-color);
+  font-weight: 300;
 }
-.list,
-.list2 {
+.list {
   margin: 0;
   padding: 0;
 }
@@ -253,12 +273,7 @@ li {
 
 .dropdown > .dropdownList:hover .list {
   /* transform: scaleY(1); */
-  height: 300px;
-  width: 300px;
-}
-.dropdown > .dropdownList:hover .list2 {
-  /* transform: scaleY(1); */
-  height: 200px;
+  height: 120px;
   width: 300px;
 }
 
@@ -438,18 +453,18 @@ a:visited {
     margin-left: 2rem;
   }
 
-  .dropdown > .dropdownList:hover .list {
-    /* transform: scaleY(1); */
-    height: 280px;
-    width: 300px;
+  .dropdown p {
+    max-width: 20rem;
   }
-  .dropdown > .dropdownList:hover .list2 {
+
+  .dropdown > .dropdownList:hover .list {
     /* transform: scaleY(1); */
     height: 150px;
     width: 300px;
   }
 
-  .dropdownList li {
+  .dropdownList li,
+  .dropdown h2 {
     font-size: 1.3rem;
   }
 
@@ -464,8 +479,15 @@ a:visited {
   .image-stack {
     width: 20rem;
     height: auto;
-    margin-right: 0;
-    align-self: center;
+    margin-right: 0rem;
+    margin-left: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-stack img {
+    width: 100%;
+    height: auto;
   }
   .values {
     justify-content: center;
@@ -597,6 +619,18 @@ a:visited {
 
   .productDescription {
     padding-top: 2rem;
+  }
+
+  .image-stack {
+    width: 25rem;
+    height: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-stack img {
+    justify-self: center;
   }
 }
 
