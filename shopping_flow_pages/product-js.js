@@ -162,7 +162,9 @@ const CART = {
 
         itemCopy.querySelector("img").src = element.photoOne;
         itemCopy.querySelector(".bagColor").textContent = element.material;
-        itemCopy.querySelector(".bagproductPrice").textContent = element.price;
+        itemCopy.querySelector(
+          ".bagproductPrice"
+        ).textContent = `${element.price} DKK`;
 
         cartcontentEl.appendChild(itemCopy);
       });
