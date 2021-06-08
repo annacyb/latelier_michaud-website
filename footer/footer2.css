@@ -36,7 +36,7 @@ body {
 }
 
 .newsletterFooter {
-  background-image: url(../photos/footer-picture3.jpg);
+  background-image: url(../photos/footer-option2.2.jpg);
   background-repeat: no-repeat;
   width: auto;
   height: 500px;
@@ -200,6 +200,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .newsletterFooter {
+    background-image: url(../photos/footer-option2.2-laptop.jpg);
+  }
+}
+
 @media only screen and (max-width: 775px) {
   .linksFooter {
     padding-right: 32px;
@@ -207,7 +213,7 @@ body {
   }
 
   .newsletterFooter {
-    background-image: url(../photos/footer-picture-small.jpg);
+    background-image: url(../photos/footer-option2.2-tablet.jpg);
   }
 }
 
@@ -306,7 +312,7 @@ body {
 
 @media only screen and (max-width: 430px) {
   .newsletterFooter {
-    background-image: url(../photos/footer-picture-xsmall.jpg);
+    background-image: url(../photos/footer-option2.2-mobile.jpg);
   }
 
   .findUs {

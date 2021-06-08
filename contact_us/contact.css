@@ -1,0 +1,137 @@
+@import url("https://use.typekit.net/wib3msp.css");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-button: #c58b71;
+  --color-font: #b17458;
+  --color-shape1: #8c9e6b;
+  --color-shape2: #f3decf;
+  --color-shape3: #f3cf90;
+  --color-background: #faf5f1;
+  --color-background2: #f5e8d6;
+
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  --font-2: "Work Sans", sans-serif;
+  --main-text-color: #3f4c5a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font: var(--font-1);
+  color: var(--main-text-color);
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.contactSec {
+  margin-top: 2rem;
+}
+
+.contactSec h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-font);
+}
+
+.contactText {
+  margin-left: 25rem;
+  margin-right: 25rem;
+  line-height: 35px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  line-height: 1.5rem;
+  font-weight: lighter;
+  margin-top: 20px;
+  font-size: 15px;
+  margin-left: -19.5rem;
+}
+
+form input {
+  width: 350px;
+  height: 20px;
+}
+
+.message {
+  margin-left: -18.5rem;
+}
+
+.sendBtn {
+  background-color: var(--color-button);
+  color: white;
+  border: none;
+  transition: 0.5s ease;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  height: 2.5rem;
+  width: 5rem;
+}
+
+.sendBtn:hover {
+  background-color: #92583f;
+  transition: 0.5s ease;
+}
+
+.findUs {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.findUs h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--color-font);
+}
+
+.findusText {
+  margin-left: 37rem;
+}
+
+.findusText p {
+  font-size: 16px;
+}
+
+.findusText .won {
+  font-size: 2rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.contactFind {
+  margin-top: 30px;
+}
+
+.FAQ {
+  margin-top: 2rem;
+  margin-left: 25rem;
+  margin-right: 25rem;
+  line-height: 35px;
+}
+
+.FAQ h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-font);
+}
+
+.FAQ h2 {
+  font-weight: bold;
+}
+
+.FAQ p {
+  margin-bottom: 1.5rem;
+}
