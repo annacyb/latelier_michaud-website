@@ -44,7 +44,7 @@ function showProduct(data1, url1) {
 
   myCopy.querySelector(
     "#productlistLink"
-  ).href = `../product-view.html?id=${data1._id}`;
+  ).href = `one_product.html?id=${data1._id}`;
 
   //grab parent
   const parent = document.querySelector("#our_jewellery-grid");
