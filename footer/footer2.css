@@ -185,6 +185,10 @@ body {
   padding-bottom: 24px;
 }
 
+.singleIcon:hover {
+  text-decoration: underline;
+}
+
 .iconImg img {
   max-width: 80%;
 }

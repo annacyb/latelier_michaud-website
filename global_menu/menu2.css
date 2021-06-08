@@ -38,15 +38,10 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 999;
-  height: 65px;
-  line-height: 65px;
-  transition: 0.5s ease;
-}
-
-nav:hover {
-  background-color: var(--color-background2);
   height: 10rem;
-  transition: 0.5s ease;
+  line-height: 65px;
+  font-family: ivypresto-display, serif;
+  background-color: var(--color-background2);
 }
 
 nav .wrapper {
@@ -182,6 +177,16 @@ nav .wrapper {
 }
 
 .rowV2 .row a h1:hover {
+  color: #92583f;
+}
+
+.row header a {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.row header a h1:hover {
   color: #92583f;
 }
 
