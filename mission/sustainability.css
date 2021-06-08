@@ -7,21 +7,20 @@ body {
 }
 
 :root {
-    --color-1: #faf5f1;
-    --color-2: #F5E8D6;
-    --color-3: #8C9E6B;
-    --color-4: #b8795e;
-  
-    --font-1: "Ivy Presto";
-    --font-2: "Work Sans", sans-serif;
-    --main-text-color: #3F4C5A;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
+  --color-1: #faf5f1;
+  --color-2: #f5e8d6;
+  --color-3: #8c9e6b;
+  --color-4: #b8795e;
+
+  --font-1: "Ivy Presto";
+  --font-2: "Work Sans", sans-serif;
+  --main-text-color: #3f4c5a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 #sus {
   display: flex;
@@ -42,86 +41,87 @@ body {
   width: 70%;
 }
 
-.res h1, .cho h1 {
+.res h1,
+.cho h1 {
   font-family: ivypresto-display, serif;
   font-weight: 400;
   font-style: normal;
-  color:#8C9E6B;
+  color: #8c9e6b;
   font-size: 1.8rem;
 }
 
-#sus_text{
-    display: flex;
-    flex-direction: row;
-    background-color: var(--color-2);
-   padding-left: 14%;
-   padding-top: 5%;
-   padding-bottom: 5%;
+#sus_text {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-2);
+  padding-left: 14%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-#sus_text p{
-    font-weight: 200;
-    font-family: var(--font-2);
-    width: 71%;
-    font-size: 1.1rem;
-    line-height: 1.6rem;
-    color: var(--main-text-color);
+#sus_text p {
+  font-weight: 400;
+  font-family: var(--font-2);
+  width: 71%;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: var(--main-text-color);
 }
 
-.res img{
-    width: 27%;
+.res img {
+  width: 27%;
 }
 
-.cho img{
-    width: 14%;
+.cho img {
+  width: 14%;
 }
 
-#treeNation img{
-    width: 65%;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
+#treeNation img {
+  width: 65%;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
 }
 
-#treeNationIllu{
-    background-color: var(--color-2);
-    padding-top:5%;
-    padding-bottom:5%;
+#treeNationIllu {
+  background-color: var(--color-2);
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-#treeNationIllu img{
-    width:65%;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
+#treeNationIllu img {
+  width: 65%;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
 }
 
-#treeNationExplained img{
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-top:5%;
+#treeNationExplained img {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 5%;
 }
 
 #readMoreTN h1 {
-    font-family: ivypresto-display, serif;
-    font-weight: 200;
-    font-style: normal;
-    color:var(--color-4);
-    font-size: 1.8rem;
-    width:21%;
-    line-height: 2.9rem;
-    margin-left: 55%;
-  }
+  font-family: ivypresto-display, serif;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--color-4);
+  font-size: 1.8rem;
+  width: 21%;
+  line-height: 2.9rem;
+  margin-left: 55%;
+}
 
-  #readMoreTN a{
-    text-decoration: none;
-    color:var(--color-4);
-  }
+#readMoreTN a {
+  text-decoration: none;
+  color: var(--color-4);
+}
 
-  #readMoreTN a:hover{
-      opacity: 70%;
-  }
+#readMoreTN a:hover {
+  opacity: 70%;
+}
 
-  #readMoreTN img{
-      width: 4.5%;
-      margin-left:65.5%;
-  }
+#readMoreTN img {
+  width: 4.5%;
+  margin-left: 65.5%;
+}
