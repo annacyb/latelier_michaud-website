@@ -57,7 +57,7 @@ window.addEventListener("load", function () {
   showSlides(slideIndex);
   myTimer = setInterval(function () {
     plusSlides(1);
-  }, 10000);
+  }, 10000000);
 
   //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
   //
