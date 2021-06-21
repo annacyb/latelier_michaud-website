@@ -23,7 +23,7 @@ html {
 #ethical_design-section1-grid {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-rows: 50px auto auto auto auto auto 70px;
+    grid-template-rows: 75px auto auto auto auto auto 70px;
     grid-column-gap: 20px;
     /* grid-row-gap: 5px; */
 

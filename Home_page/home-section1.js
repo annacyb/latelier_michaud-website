@@ -293,4 +293,4 @@ function setup_listeners_slider_dots() {
 let counter = 0
 let stop = false
 setup_listeners_slider_dots()
-setInterval(auto_animation.bind(), 3500);
+setInterval(auto_animation.bind(), 5000);

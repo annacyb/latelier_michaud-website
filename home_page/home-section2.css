@@ -54,12 +54,21 @@ a#productlistLink {
 .circle-image-border {
     width: 17vw;
     height: 17vw;
-    border: 3px var(--color-button) solid;
+    border: solid 3px #b17458;
+    /* border: 3px #edd3c0 solid; */
+    /* border: 3px var(--color-button) solid; */
     position: absolute;
     left: -0.5vw;
     top: -0.5vw;
     border-radius: 50%;
-    opacity: 60%;
+    opacity: 30%;
+    transition: 0.5s ease;
+}
+
+.circle-image-border:hover {
+    border: solid 3px #b17458;
+    transition: 0.5s ease;
+    opacity: 80%;
 }
 
 .sect2-product_container {
